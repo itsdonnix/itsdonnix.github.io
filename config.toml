@@ -1,0 +1,13 @@
+DefaultContentLanguage = "en"
+baseURL = "https://donnisnoni.github.io/"
+languageCode = "en"
+title = "Don Alfons Nisnoni"
+
+[params]
+author = "Don Alfons Nisnoni"
+
+[taxonomies]
+author = "authors"
+category = "categories"
+post = "posts"
+tag = "tags"

@@ -1,0 +1,159 @@
+:root {
+  --font-color: #252738;
+  --border-color: #ececec;
+  --bg-color: #fff;
+}
+* {
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro",
+    Arial, serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+  font-size: 16px;
+  word-spacing: 1px;
+  color: #666;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin: 10px 2px;
+}
+
+a {
+  color: blueviolet;
+}
+.header,
+#footer,
+.date,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro",
+    Arial, sans-serif;
+  color: #444;
+}
+
+p {
+  font-weight: 400;
+}
+
+body > header {
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+}
+
+.main-nav {
+  border-bottom: 2px solid var(--border-color);
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.brand-pic {
+  border-radius: 50%;
+}
+
+.main-nav ul {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+}
+
+.main-nav a {
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  color: #1f1f31;
+}
+
+.main-page {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+.main-page > :first-child {
+  margin: 20px 0 30px;
+}
+
+.post-list {
+  border-bottom: 1px solid var(--border-color);
+  margin: 15px 2px;
+  padding: 10px 0;
+}
+
+.post-list .title {
+  font-size: 20px;
+}
+
+.post-list .title a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.post h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin: 20px 0 30px;
+}
+
+.post h2,
+.post h3,
+.post h4,
+.post h5 {
+  border-left: 5px solid #4787ff;
+  padding-left: 5px;
+}
+
+.post .content p,
+.post .content ul,
+.post .content ol {
+  margin: 1em 0 1.5em;
+}
+
+.date {
+  font-weight: 300;
+  color: #817a7a;
+}
+
+.post-list .date {
+  margin: 10px 0 0;
+}
+
+.post .date {
+  margin: 0 0 30px;
+}
+
+.post header {
+  border-bottom: 2px solid var(--border-color);
+}
+#footer {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 2px solid var(--border-color);
+  margin: 0 10px;
+}

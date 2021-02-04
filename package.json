@@ -1,0 +1,13 @@
+{
+  "name": "donnisnoni.github.io",
+  "version": "0.0.1",
+  "description": "Don Alfons Nisnoni Personal Site",
+  "main": "index.js",
+  "private": "true",
+  "author": "Don Alfons Nisnoni",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "prettier-plugin-go-template": "^0.0.10"
+  }
+}
