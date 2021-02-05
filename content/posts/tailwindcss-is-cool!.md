@@ -5,28 +5,70 @@ draft: true
 title: "Tailwindcss Is Cool!"
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+# Heading 1
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+## Heading 2
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+### Heading 3
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+```js
+function something() {}
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+const don = "Don Alfons Nisnoni";
+```
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+`sudo apt install something`
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur, voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+
+### Heading 4
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
