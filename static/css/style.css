@@ -7,11 +7,13 @@
   --ff-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Joypixels", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
+  --markdown-code-bg-color: rgba(191, 191, 192, 0.253);
 }
 * {
   color: var(--font-color);
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -25,7 +27,6 @@ body {
 
 p {
   font-size: 1.2em;
-  margin: 10px 0;
 }
 
 a {
@@ -88,8 +89,9 @@ body > header {
   padding: 10px;
 }
 
-.main-page > :first-child {
-  margin: 20px 0 30px;
+.main-page > :first-child,
+.post > :first-child {
+  margin: 20px 0;
 }
 
 .post-list {
@@ -113,11 +115,48 @@ body > header {
   margin: 15px 0;
 }
 
-.post .content p,
-.post .content ul,
-.post .content ol,
-.post .content .highlight {
-  margin: 1em 0 1.5em;
+.post .date {
+  margin: 0 0 20px;
+}
+
+.post header {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.post p,
+.post ul,
+.post ol,
+.post .highlight {
+  margin-bottom: 16px;
+}
+
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+  margin: 24px 0 16px 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.post ol,
+.post ul {
+  padding-left: 2em;
+}
+
+.post li + li {
+  margin-top: 0.25em;
+}
+
+.post code,
+.post tt {
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  background-color: var(--markdown-code-bg-color);
+  border-radius: var(--radius);
 }
 
 .date {
@@ -126,14 +165,6 @@ body > header {
 
 .post-list .date {
   margin: 10px 0 0;
-}
-
-.post .date {
-  margin: 0 0 20px;
-}
-
-.post header {
-  border-bottom: 2px solid var(--border-color);
 }
 
 .highlight pre {
