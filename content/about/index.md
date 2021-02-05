@@ -1,5 +1,5 @@
 ---
-title: "👨‍💻 About Me"
+title: "About Me"
 description: "About Don Alfons Nisnoni"
 date: 2021-02-04T09:06:11+08:00
 author: "Don Alfons Nisnoni"
