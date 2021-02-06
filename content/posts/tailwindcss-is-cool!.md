@@ -29,6 +29,10 @@ function something() {}
 const don = "Don Alfons Nisnoni";
 ```
 
+> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+> Architecto quo optio obcaecati nulla labore animi. Nihil at corrupti in pariatur,
+> voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque impedit.
+
 `sudo apt install something`
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
