@@ -1,8 +1,8 @@
 {{ define "main" }}
   <div class="post">
     <header>
-      <h1>{{ .Title }}</h1>
       <section class="date">{{ .Date.Format "Jan 2, 2006" }}</section>
+      <h1>{{ .Title }}</h1>
     </header>
     <article class="content">
       {{ .Content }}
