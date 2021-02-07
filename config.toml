@@ -11,3 +11,6 @@ author = "authors"
 category = "categories"
 post = "posts"
 tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true
