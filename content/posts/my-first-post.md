@@ -1,8 +1,11 @@
 ---
 author: "Don Alfons Nisnoni"
 date: 2021-02-05T04:12:42+08:00
-# draft: true
+description: "Finally, Don Nisnoni just created his site for the first time since he learn programming"
 title: "My First Post"
+tags:
+  - me
+  - others
 ---
 
 Finally, I just created my site!
