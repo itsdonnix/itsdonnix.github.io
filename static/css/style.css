@@ -1,11 +1,13 @@
 :root {
   --bg-color: #fff;
   --color-text-tertiary: rgb(71, 76, 82);
+  --color-date: #605f67;
   --border-color: #e6e4e4;
   --code-bg-color: #bfbfc041;
   --ff-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Joypixels", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-color: #252738;
+  --post-list-title-hover-color: #000;
   --font-size: 15px;
   --radius: 5px;
 }
@@ -72,7 +74,7 @@ a {
 
 .main-nav a:hover,
 .post-list .title a:hover {
-  color: black;
+  color: var(--post-list-title-hover-color);
   text-decoration: underline;
 }
 
@@ -116,9 +118,9 @@ a {
 }
 
 .post .title {
-  font-size: 32px;
+  font-size: 2em;
   letter-spacing: 1px;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .post .tags {
@@ -142,7 +144,7 @@ a {
 }
 
 .date {
-  color: #817a7a;
+  color: var(--color-date);
 }
 
 .highlight code {
