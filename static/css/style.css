@@ -3,9 +3,8 @@
   --color-text-tertiary: rgb(71, 76, 82);
   --border-color: #e6e4e4;
   --code-bg-color: #bfbfc041;
-  --ff-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Joypixels", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  --ff-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Joypixels", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-color: #252738;
   --font-size: 15px;
   --radius: 5px;
@@ -27,22 +26,8 @@ body {
   text-rendering: optimizelegibility;
 }
 
-p {
-  font-size: 1.1em;
-}
-
 a {
   color: blueviolet;
-}
-
-hr {
-  margin: 5px 0 20px 0;
-}
-
-code {
-  background: rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  padding: 0.2em 0.25em;
 }
 
 .header {
@@ -70,7 +55,6 @@ code {
 
 .main-nav {
   border-bottom: 2px solid var(--border-color);
-  margin: 0 10px;
   padding: 15px 10px 15px 10px;
 }
 
@@ -112,10 +96,6 @@ code {
   border-bottom: 1px solid var(--border-color);
   margin: 15px 2px;
   padding: 10px 0;
-}
-
-.post-list .title {
-  font-size: 1.5em;
 }
 
 .post-list .title a {
@@ -161,72 +141,8 @@ code {
   max-width: 800px;
 }
 
-.content p,
-.content ul,
-.content ol,
-.content .highlight {
-  margin-bottom: 16px;
-}
-
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6 {
-  font-weight: 600;
-  line-height: 1.25;
-  margin-bottom: 16px;
-  margin: 24px 0 16px 0;
-}
-
-.content blockquote {
-  padding: 0 1em;
-  color: var(--color-text-tertiary);
-  border-left: 0.3em solid var(--border-color);
-}
-
-.content ol,
-.content ul {
-  padding-left: 2em;
-}
-
-.content li + li {
-  margin-top: 0.25em;
-}
-
-.content code,
-.content tt {
-  background-color: var(--code-bg-color);
-  border-radius: var(--radius);
-  font-size: 85%;
-  padding: 0.2em 0.4em;
-}
-
 .date {
   color: #817a7a;
-}
-
-.content {
-  word-wrap: break-word;
-}
-
-.content table {
-  display: block;
-  max-width: 100%;
-  overflow: auto;
-  width: -moz-max-content;
-  width: -webkit-max-content;
-  width: 100%;
-  width: max-content;
-}
-
-.content .highlight pre,
-.content pre {
-  padding: 16px;
-  overflow: auto;
-  line-height: 1.45;
-  border-radius: var(--radius);
 }
 
 .highlight code {
