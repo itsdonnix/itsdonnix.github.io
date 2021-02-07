@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ .Title }} - {{ .Site.Title }}</title>
-    <meta name="description" content="{{ .Summary }}" />
-    <meta name="author" content="{{ .Params.Author }}" />
+    {{ if or .Params.description .Summary }}
+      <meta
+        name="description"
+        content="{{ with .Param "description" }}{{ . }}{{ else }}{{ .Summary }}{{ end }}"
+      />
+    {{ end }}
+    <meta name="author" content="{{ with .Param "author" }}{{ . }}{{ else }}{{ .Site.Author }}{{ end }}" />
     <meta
       name="google-site-verification"
       content="gq8ZodQmAw_AXWy6TdTFYrQF2mHgaSm5OO85gmyw9BY"
