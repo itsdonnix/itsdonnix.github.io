@@ -1,13 +1,20 @@
 {{ define "main" }}
   <div class="post">
     <header>
+      <h1 class="title">{{ .Title }}</h1>
       <section class="date">
         {{ .Date.Format "Jan 2, 2006" }} | {{ .ReadingTime }}min read
       </section>
-      <h1 class="title">{{ .Title }}</h1>
     </header>
     <article class="content">
       {{ .Content }}
     </article>
+    <footer>
+      <ul class="tags">
+        {{ range (.GetTerms "tags") }}
+          <li><a href="{{ .Permalink }}">#{{ .LinkTitle }}</a></li>
+        {{ end }}
+      </ul>
+    </footer>
   </div>
 {{ end }}

@@ -1,0 +1,16 @@
+{{ range .Pages }}
+  <section class="post-list">
+    <h2 class="title">
+      <a title="{{ .Title }}" href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    <div class="date">
+      <span title="The date this post was created">
+        {{ .Date.Format "Jan 2, 2006" }}
+      </span>
+      |
+      <span title="The time it takes for you to read all the contents of this article">
+        {{ .ReadingTime }}min read
+      </span>
+    </div>
+  </section>
+{{ end }}

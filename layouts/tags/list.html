@@ -1,0 +1,4 @@
+{{ define "main" }}
+  <h2 class="title">Posts under <i>#{{ lower  .Title }}</i></h2>
+  {{ partial "post-list" . }}
+{{ end }}
