@@ -1,3 +1,13 @@
 {{ define "main" }}
-  {{ .Content }}
+  <h2>Recent Posts</h2>
+  {{ with .Site.GetPage "section" "/posts" }}
+    {{ range first 3 .Pages }}
+      {{ partial "post-list.html" . }}
+    {{ end }}
+    <div style="display: flex;">
+      <a style="margin-left: auto;" href="./posts">All Posts</a>
+    </div>
+  {{ end }}
+
+  <!-- {{ .Content }} -->
 {{ end }}
