@@ -37,6 +37,10 @@
       />
     {{ end }}
 
+    {{ $styles := resources.Get "sass/main.css" }}
+    {{ $styles = $styles | resources.PostCSS }}
+    <link href="{{ $styles.Permalink }}" rel="stylesheet" />
+
     <meta name="google-site-verification" content="gq8ZodQmAw_AXWy6TdTFYrQF2mHgaSm5OO85gmyw9BY" />
   </head>
 </html>
