@@ -9,8 +9,9 @@
 
 @layer base {
   body {
-    font-color: var(--base-font-color);
+    color: var(--base-font-color);
   }
+
   h1 {
     font-size: 1.9em;
     margin-top: 20px;
