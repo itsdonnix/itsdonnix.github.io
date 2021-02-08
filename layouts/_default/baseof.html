@@ -1,37 +1,10 @@
 {{ partial "header.html" . }}
 
-<header class="header">
-  <div class="brand">
-    <img width="100%" style="max-width: 50px;" src="/images/profile.png" alt="" />
-    <h3><a href="/">Don Nisnoni</a></h3>
-  </div>
-  <nav class="main-nav">
-    <ul>
-      <li>
-        <a href="/posts">Posts</a>
-      </li>
-      <li>
-        <a href="/about">About</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="social-media-info">
-    <a href="https://github.com/donnisnoni">
-      <img width="20px" src="/icons/github.svg" alt="GitHub" />
-    </a>
-    <a href="https://twitter.com/AlfonsDon">
-      <img width="20px" src="/icons/twitter.svg" alt="Twitter" />
-    </a>
-    <a href="https://www.instagram.com/itsdonnisnoni">
-      <img width="20px" src="/icons/instagram.svg" alt="Instagram" />
-    </a>
-    <a href="mailto:donnisnoni@outlook.com">
-      <img width="20px" src="/icons/email.svg" alt="Instagram" />
-    </a>
-  </div>
-</header>
-
 <body>
+  <header class="header">
+    <a href="/">DON NISNONI</a>
+  </header>
+
   <main class="main-page">
     {{ block "main" . }} {{ end }}
   </main>
