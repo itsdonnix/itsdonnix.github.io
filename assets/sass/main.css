@@ -81,4 +81,26 @@
   color: var(--base-font-color);
 }
 
+.post footer {
+  margin-top: 20px;
+}
+
+.post .tags {
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+}
+
+.post .tags a {
+  margin-right: 5px;
+  text-decoration: none;
+  margin-bottom: 8px;
+  padding: 5px;
+  background-color: var(--code-bg-color);
+  color: var(--color-text-tertiary);
+  border-radius: var(--radius);
+  background-color: #f4eefb;
+  border-radius: 5px;
+}
+
 @import "github-markdown.css";
