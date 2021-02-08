@@ -38,7 +38,7 @@
     {{ end }}
 
     {{ $styles := resources.Get "sass/main.css" }}
-    {{ $styles = $styles | resources.PostCSS }}
+    {{ $styles = $styles | resources.PostCSS (dict "inlineImports" true) }}
     <link href="{{ $styles.Permalink }}" rel="stylesheet" />
 
     <meta name="google-site-verification" content="gq8ZodQmAw_AXWy6TdTFYrQF2mHgaSm5OO85gmyw9BY" />
