@@ -22,16 +22,21 @@
     <meta name="theme-color" content="#feffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <title>{{ .Title }} - {{ .Site.Title }}</title>
+
     {{ if or .Params.description .Summary }}
       <meta
         name="description"
-        content="{{ with .Param "description" }}{{ . }}{{ else }}{{ .Summary }}{{ end }}"
+        content="{{ if isset .Params "description" }} {{ .Description }} {{ else }} {{ .Summary }} {{ end }}"
       />
     {{ end }}
-    <meta
-      name="author"
-      content="{{ with .Param "author" }}{{ . }}{{ else }}{{ .Site.Author }}{{ end }}"
-    />
+
+    {{ if or .Params.author .Site.Author }}
+      <meta
+        name="author"
+        content="{{ if isset .Params "author" }} {{ .Params.Author }} {{ else }} {{ .Site.Author }} {{ end }}"
+      />
+    {{ end }}
+
     <meta name="google-site-verification" content="gq8ZodQmAw_AXWy6TdTFYrQF2mHgaSm5OO85gmyw9BY" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/github.css" />
