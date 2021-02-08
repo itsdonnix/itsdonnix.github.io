@@ -28,10 +28,14 @@
 }
 
 .main-header {
+  border-bottom: 2px dashed var(--main-header-border-color);
+}
+
+.main-header .brand {
+  display: block;
   font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
-  font-size: 30px;
-  border-bottom: 2px dashed var(--main-header-border-color);
+  font-size: 26px;
 }
 
 .page-main-title {
