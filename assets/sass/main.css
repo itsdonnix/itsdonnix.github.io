@@ -3,10 +3,14 @@
 @import "tailwindcss/utilities";
 
 :root {
+  --base-font-color: #2f2f3a;
   --main-header-border-color: #cedece;
 }
 
 @layer base {
+  body {
+    font-color: var(--base-font-color);
+  }
   h1 {
     font-size: 1.9em;
     margin-top: 20px;
@@ -24,6 +28,9 @@
 }
 
 .main-header {
+  font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  font-size: 30px;
   border-bottom: 2px dashed var(--main-header-border-color);
 }
 
@@ -38,13 +45,22 @@
   margin: 0 10px;
 }
 
-.post .title {
+.post .title,
+.post-list .title {
   font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
 }
 
 .post .info {
   margin-bottom: 20px;
+}
+
+.post-list {
+  margin-bottom: 10px;
+}
+
+.post-list .title {
+  font-size: 20px;
 }
 
 @import "github-markdown.css";
