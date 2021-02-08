@@ -54,6 +54,10 @@
   margin: 10px 0;
 }
 
+.main-footer {
+  border-top: 2px dashed var(--main-header-border-color);
+}
+
 /* ------------------------------- POST STYLES ------------------------------ */
 .post {
   margin: 0 10px;
