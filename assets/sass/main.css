@@ -20,6 +20,14 @@
   h2 {
     font-size: 1.7em;
   }
+
+  a {
+    color: #2b5ecc;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 ._container {
@@ -32,6 +40,7 @@
 }
 
 .main-header .brand {
+  color: var(--base-font-color);
   display: block;
   font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
@@ -65,6 +74,10 @@
 
 .post-list .title {
   font-size: 20px;
+}
+
+.post-list .title a {
+  color: var(--base-font-color);
 }
 
 @import "github-markdown.css";
