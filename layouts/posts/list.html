@@ -1,5 +1,6 @@
 {{ define "main" }}
-  <h2 class="title">{{ .Title }}</h2>
+  <h2 class="page-main-title">{{ .Title }}</h2>
+
   {{ range .Pages }}
     {{ partial "post-list.html" . }}
   {{ end }}

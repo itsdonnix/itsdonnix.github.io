@@ -1,11 +1,13 @@
 {{ partial "header.html" . }}
 
-<body>
-  <header class="header">
-    <a href="/">DON NISNONI</a>
+<body class="flex flex-col min-h-screen">
+  <header class="p-3 mx-auto text-xl font-bold _container main-header">
+    <div class="mx-auto">
+      <a href="/">DON NISNONI</a>
+    </div>
   </header>
 
-  <main class="main-page">
+  <main class="p-2 mx-auto main-section _container">
     {{ block "main" . }} {{ end }}
   </main>
 </body>
