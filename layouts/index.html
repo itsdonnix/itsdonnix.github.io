@@ -5,8 +5,8 @@
     {{ range first 3 .Pages }}
       {{ partial "post-list.html" . }}
     {{ end }}
-    <div style="display: flex;">
-      <a style="margin-left: auto;" href="./posts">All Posts</a>
+    <div class="flex">
+      <a class="ml-auto" href="./posts">All Posts</a>
     </div>
   {{ end }}
 
