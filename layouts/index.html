@@ -10,7 +10,7 @@
   <h2 class="page-main-title">Recent Posts</h2>
 
   {{ with .Site.GetPage "section" "/posts" }}
-    {{ range first 3 .Pages }}
+    {{ range first 5 .Pages }}
       {{ partial "post-list.html" . }}
     {{ end }}
     <div class="flex">
