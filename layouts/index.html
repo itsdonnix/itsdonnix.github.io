@@ -1,4 +1,12 @@
 {{ define "main" }}
+  <article class="my-4 markdown-body">
+    <h3>Hello...</h3>
+    <p>
+      Hi there... My name is <i>Don Nisnoni</i>, you can call me <i>Don</i>. I'm a software
+      developer from Indonesia 🇮🇩.
+    </p>
+  </article>
+
   <h2 class="page-main-title">Recent Posts</h2>
 
   {{ with .Site.GetPage "section" "/posts" }}
@@ -9,6 +17,4 @@
       <a class="ml-auto" href="./posts">All Posts</a>
     </div>
   {{ end }}
-
-  <!-- {{ .Content }} -->
 {{ end }}
