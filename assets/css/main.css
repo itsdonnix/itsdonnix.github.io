@@ -148,8 +148,6 @@
 .post .tags a {
   background-color: var(--code-bg-color);
   border-radius: 5px;
-  border-radius: var(--radius);
-  color: var(--color-text-tertiary);
   margin-bottom: 8px;
   margin-right: 5px;
   padding: 5px;
