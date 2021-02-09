@@ -46,8 +46,8 @@
     {{ $styles := resources.Get "css/main.css" }}
     {{ $styles = $styles | resources.PostCSS (dict "inlineImports" true) }}
 
-    {{ if hugo.IsProduction }} 
-      {{ $styles = $styles | minify }} 
+    {{ if hugo.IsProduction }}
+      {{ $styles = $styles | minify }}
     {{ end }}
 
     <link href="{{ $styles.Permalink }}" rel="stylesheet" />
