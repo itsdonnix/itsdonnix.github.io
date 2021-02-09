@@ -60,7 +60,7 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
-  color: #24292e;
+  color: var(--base-font-color);
   font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif, Apple Color Emoji,
     Segoe UI Emoji;
   font-size: inherit;
@@ -137,7 +137,7 @@
 }
 
 .markdown-body a {
-  color: #0366d6;
+  color: var(--anchor-font-color);
   text-decoration: none;
 }
 
@@ -653,7 +653,7 @@
 
 .markdown-body blockquote {
   padding: 0 1em;
-  color: #6a737d;
+  color: var(--blockquote-font-color);
   border-left: 0.25em solid #dfe2e5;
 }
 
@@ -767,13 +767,13 @@
 }
 
 .markdown-body table tr {
-  background-color: #fff;
+  /* background-color: #fff; */
   border-top: 1px solid #c6cbd1;
 }
 
-.markdown-body table tr:nth-child(2n) {
+/* .markdown-body table tr:nth-child(2n) {
   background-color: #f6f8fa;
-}
+} */
 
 .markdown-body img {
   max-width: 100%;
@@ -793,7 +793,7 @@
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(27, 31, 35, 0.05);
+  background-color: var(--code-bg-color);
   border-radius: 3px;
 }
 
@@ -826,7 +826,7 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
+  background-color: var(--code-bg-color);
   border-radius: 3px;
 }
 

@@ -12,7 +12,7 @@ const config = {
     enable: false,
     content: ["./layouts/**/*.html", "./content/**/*.md", "./content/**/*.html"],
   },
-  darkMode: "media",
+  darkMode: "class",
   theme: {
     screens: {
       sm: "640px", // => @media (min-width: 640px) { ... }

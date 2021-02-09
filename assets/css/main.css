@@ -3,12 +3,27 @@
 @import "tailwindcss/utilities";
 
 :root {
+  --base-bg-color: #fff;
   --base-font-color: #2f2f3a;
   --main-header-border-color: #cedece;
+  --post-info-font-color: #6c7172;
+  --anchor-font-color: #2c5cc4;
+  --code-bg-color: #1b1f230d;
+  --blockquote-font-color: #6a737d;
+}
+
+:root.dark {
+  --base-bg-color: #1a1a2b;
+  --base-font-color: #fff;
+  --post-info-font-color: #aab1b3;
+  --anchor-font-color: #ab83f4;
+  --code-bg-color: rgb(211 232 254 / 5%);
+  --blockquote-font-color: #94989e;
 }
 
 @layer base {
   body {
+    background-color: var(--base-bg-color);
     color: var(--base-font-color);
   }
 
@@ -23,7 +38,7 @@
   }
 
   a {
-    color: #2b5ecc;
+    color: var(--anchor-color);
   }
 
   a:hover {
@@ -44,8 +59,25 @@
   color: var(--base-font-color);
   display: block;
   font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-align: center;
+  /* text-align: center; */
   font-size: 26px;
+}
+
+.toggle-dark {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.toggle-dark svg {
+  fill: var(--base-font-color);
+}
+
+:root:not(.dark) .toggle-dark .light-icon {
+  display: none;
+}
+
+:root.dark .toggle-dark .dark-icon {
+  display: none;
 }
 
 .page-main-title {
@@ -75,7 +107,7 @@
 
 .post .info,
 .post-list .info {
-  color: #6c7172;
+  color: var(--post-info-font-color);
 }
 
 .post-list {
@@ -91,25 +123,26 @@
 }
 
 .post footer {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .post .tags {
-  margin-top: 30px;
-  list-style: none;
   display: flex;
+  list-style: none;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .post .tags a {
-  margin-right: 5px;
-  text-decoration: none;
-  margin-bottom: 8px;
-  padding: 5px;
   background-color: var(--code-bg-color);
-  color: var(--color-text-tertiary);
-  border-radius: var(--radius);
-  background-color: #f4eefb;
   border-radius: 5px;
+  border-radius: var(--radius);
+  color: var(--color-text-tertiary);
+  margin-bottom: 8px;
+  margin-right: 5px;
+  padding: 5px;
+  text-decoration: none;
 }
 
 @import "github-markdown.css";
