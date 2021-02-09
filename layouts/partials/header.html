@@ -43,8 +43,13 @@
       rel="stylesheet"
     />
 
-    {{ $styles := resources.Get "sass/main.css" }}
+    {{ $styles := resources.Get "css/main.css" }}
     {{ $styles = $styles | resources.PostCSS (dict "inlineImports" true) }}
+
+    {{ if hugo.IsProduction }} 
+      {{ $styles = $styles | minify }} 
+    {{ end }}
+
     <link href="{{ $styles.Permalink }}" rel="stylesheet" />
 
     <meta name="google-site-verification" content="gq8ZodQmAw_AXWy6TdTFYrQF2mHgaSm5OO85gmyw9BY" />
