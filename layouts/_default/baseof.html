@@ -50,12 +50,22 @@
         const toggleDarkEl = document.getElementById("toggle-dark");
         const htmlEl = document.querySelector("html");
 
+        function setDark(v) {
+          if (v) {
+            htmlEl.classList.add("dark");
+          } else {
+            htmlEl.classList.remove("dark");
+          }
+          localStorage["dark"] = v;
+          toggleDarkEl.setAttribute("aria-checked", v);
+        }
+
         if (undefined === localStorage["dark"]) {
           localStorage["dark"] = false;
         } else if (localStorage["dark"] === "true") {
-          htmlEl.classList.add("dark");
+          setDark(true);
         } else {
-          htmlEl.classList.remove("dark");
+          setDark(false);
         }
 
         toggleDarkEl &&
@@ -66,7 +76,7 @@
             } else {
               htmlEl.classList.remove("dark");
             }
-            localStorage["dark"] = !isDark;
+            setDark(!isDark);
           });
       })();
     </script>
