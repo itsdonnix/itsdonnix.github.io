@@ -45,41 +45,7 @@
         </g>
       </svg>
     </div>
-    <script>
-      (function () {
-        const toggleDarkEl = document.getElementById("toggle-dark");
-        const htmlEl = document.querySelector("html");
-
-        function setDark(v) {
-          if (v) {
-            htmlEl.classList.add("dark");
-          } else {
-            htmlEl.classList.remove("dark");
-          }
-          localStorage["dark"] = v;
-          toggleDarkEl.setAttribute("aria-checked", v);
-        }
-
-        if (undefined === localStorage["dark"]) {
-          localStorage["dark"] = false;
-        } else if (localStorage["dark"] === "true") {
-          setDark(true);
-        } else {
-          setDark(false);
-        }
-
-        toggleDarkEl &&
-          toggleDarkEl.addEventListener("click", function () {
-            const isDark = htmlEl.classList.contains("dark");
-            if (!isDark) {
-              htmlEl.classList.add("dark");
-            } else {
-              htmlEl.classList.remove("dark");
-            }
-            setDark(!isDark);
-          });
-      })();
-    </script>
+    {{ partial "dark_mode_script.html" }}
   </header>
 
   <main class="p-2 mx-auto main-section _container">

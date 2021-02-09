@@ -1,0 +1,9 @@
+{{ partial "header.html" . }}
+<body class="flex flex-col items-center justify-center min-h-screen">
+  {{ partial "dark_mode_script.html" }}
+  <main class="text-center ">
+    <p class="my-2 text-2xl">Page that you are looking for is not found 😬</p>
+    <h2 class="text-center"><a href="{{ "/" | relURL }}">Go Home</a></h2>
+  </main>
+</body>
+{{ partial "footer.html" }}
