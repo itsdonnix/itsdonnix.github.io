@@ -7,9 +7,6 @@ title = "Don Alfons Nisnoni"
 author = "Don Alfons Nisnoni"
 
 [taxonomies]
-author = "authors"
-category = "categories"
-post = "posts"
 tag = "tags"
 
 [markup.goldmark.renderer]
