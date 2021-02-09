@@ -14,6 +14,6 @@ module.exports = {
     require("tailwindcss"),
     PRODUCTION && require("autoprefixer"),
     ...(PRODUCTION ? [purgecss] : []),
-    // PRODUCTION && require("cssnano")(),
+    PRODUCTION && require("cssnano")({ preset: "default" }),
   ],
 };
