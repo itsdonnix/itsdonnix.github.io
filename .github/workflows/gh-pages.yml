@@ -19,6 +19,9 @@ jobs:
         with:
           hugo-version: "0.80.0"
 
+      - name: Install Dependencies
+        run: yarn
+
       - name: Hugo Build
         run: hugo --minify
 
