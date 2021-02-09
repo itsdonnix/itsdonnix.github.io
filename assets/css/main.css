@@ -12,6 +12,8 @@
   --blockquote-font-color: #6a737d;
 }
 
+/* purgecss start ignore */
+
 :root.dark {
   --base-bg-color: #1a1a2b;
   --base-font-color: #fff;
@@ -20,6 +22,8 @@
   --code-bg-color: rgb(211 232 254 / 5%);
   --blockquote-font-color: #94989e;
 }
+
+/* purgecss end ignore */
 
 @layer base {
   body {
@@ -68,17 +72,18 @@
   cursor: pointer;
 }
 
+/* purgecss start ignore */
+
 .toggle-dark svg {
   fill: var(--base-font-color);
 }
 
-:root:not(.dark) .toggle-dark .light-icon {
-  display: none;
-}
-
+:root:not(.dark) .toggle-dark .light-icon,
 :root.dark .toggle-dark .dark-icon {
   display: none;
 }
+
+/* purgecss end ignore */
 
 .page-main-title {
   font-size: 1.2em;
