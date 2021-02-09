@@ -9,6 +9,7 @@ const config = {
     extendedFontSizeScale: true,
   },
   purge: {
+    enable: false,
     content: ["./layouts/**/*.html", "./content/**/*.md", "./content/**/*.html"],
   },
   darkMode: "media",
