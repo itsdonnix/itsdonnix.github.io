@@ -73,6 +73,11 @@
   margin-bottom: 20px;
 }
 
+.post .info,
+.post-list .info {
+  color: #6c7172;
+}
+
 .post-list {
   margin-bottom: 10px;
 }
