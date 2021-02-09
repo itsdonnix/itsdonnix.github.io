@@ -14,6 +14,9 @@ module.exports = {
     require("tailwindcss"),
     PRODUCTION && require("autoprefixer"),
     ...(PRODUCTION ? [purgecss] : []),
-    PRODUCTION && require("cssnano")({ preset: "default" }),
+    PRODUCTION &&
+      require("cssnano")({
+        preset: ["advanced", { discardComments: { removeAll: true } }],
+      }),
   ],
 };
