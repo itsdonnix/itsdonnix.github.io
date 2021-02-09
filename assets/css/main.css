@@ -68,8 +68,9 @@
 }
 
 .toggle-dark {
-  padding: 5px;
   cursor: pointer;
+  padding: 5px;
+  user-select: none;
 }
 
 /* purgecss start ignore */
