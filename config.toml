@@ -1,6 +1,6 @@
 DefaultContentLanguage = "en"
-# baseURL = "https://donnisnoni.github.io/"
-baseURL = "http://localhost:8080/"
+baseURL = "https://donnisnoni.github.io/"
+# baseURL = "http://localhost:8080/"
 languageCode = "en"
 title = "Don Alfons Nisnoni"
 
