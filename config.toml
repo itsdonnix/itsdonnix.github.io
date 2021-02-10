@@ -1,6 +1,5 @@
 DefaultContentLanguage = "en"
 baseURL = "https://donnisnoni.github.io/"
-# baseURL = "http://localhost:8080/"
 languageCode = "en"
 title = "Don Alfons Nisnoni"
 
@@ -10,8 +9,13 @@ author = "Don Alfons Nisnoni"
 [taxonomies]
 tag = "tags"
 
-[markup.goldmark.renderer]
-unsafe = true
-
 [build]
 writeStats = true
+
+[markup]
+[markup.highlight]
+noClasses = false
+tabWidth = 4
+
+[markup.goldmark.renderer]
+unsafe = true
