@@ -11,6 +11,7 @@
   --code-bg-color: #1b1f230d;
   --blockquote-font-color: #6a737d;
   --font-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  --font-serif: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* purgecss start ignore */
@@ -68,7 +69,7 @@
 .main-header .brand {
   color: var(--base-font-color);
   display: block;
-  font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: var(--font-serif);
   /* text-align: center; */
   font-size: 26px;
 }
@@ -109,7 +110,7 @@
 
 .post .title,
 .post-list .title {
-  font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-weight: bold;
 }
 
