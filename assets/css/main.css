@@ -10,6 +10,7 @@
   --anchor-font-color: #2c5cc4;
   --code-bg-color: #1b1f230d;
   --blockquote-font-color: #6a737d;
+  --font-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
 }
 
 /* purgecss start ignore */
