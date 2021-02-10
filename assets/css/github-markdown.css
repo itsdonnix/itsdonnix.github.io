@@ -280,7 +280,7 @@
 .markdown-body code,
 .markdown-body pre {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
-  font-size: 12px;
+  font-size: 0.9em;
 }
 
 .markdown-body pre {
@@ -824,7 +824,7 @@
 .markdown-body pre {
   padding: 16px;
   overflow: auto;
-  font-size: 85%;
+  /* font-size: 85%; */
   line-height: 1.45;
   background-color: var(--code-bg-color);
   border-radius: 3px;
