@@ -1,7 +1,7 @@
 DefaultContentLanguage = "en"
 baseURL = "https://donnisnoni.github.io/"
 languageCode = "en"
-title = "Don Alfons Nisnoni"
+title = "Don Nisnoni's Blog"
 
 [params]
 author = "Don Alfons Nisnoni"
