@@ -2,6 +2,10 @@
 author: "Don Alfons Nisnoni"
 date: 2021-02-04T23:21:26+08:00
 draft: true
+tags:
+  - tailwind
+  - css
+  - web
 title: "Tailwindcss Is Cool!"
 ---
 
