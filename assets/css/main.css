@@ -63,7 +63,10 @@
 }
 
 .main-header {
+  position: sticky;
+  background-color: var(--base-bg-color);
   border-bottom: 2px dashed var(--main-header-border-color);
+  top: 0;
 }
 
 .main-header .brand {
