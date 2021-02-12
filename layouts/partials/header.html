@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -29,12 +29,28 @@
       href="/index.xml"
     />
     <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}" />
+    <meta name="twitter:site" content="{{ .Site.Title }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:type" content="website" />
 
     {{ if or .Params.description .Summary }}
       <meta
         name="description"
         content="{{ if isset .Params "description" }} {{ .Description }} {{ else }} {{ .Summary }} {{ end }}"
       />
+      <meta
+        name="twitter:card"
+        content="{{ if isset .Params "description" }} {{ .Description }} {{ else }} {{ .Summary }} {{ end }}"
+      />
+      <meta
+        property="og:description"
+        content="{{ if isset .Params "description" }} {{ .Description }} {{ else }} {{ .Summary }} {{ end }}"
+      />
+    {{ end }}
+
+    {{ if isset .Params "thumbnail" }}
+      <meta property="og:image" content="{{ .Site.BaseURL }}images/{{ .Params.Thumbnail }}" />
     {{ end }}
 
     {{ if or .Params.author .Site.Author }}
