@@ -25,38 +25,52 @@
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="Dan Nisnoni's Blog RSS Feed"
+      title="Don Nisnoni's Blog RSS Feed"
       href="/index.xml"
     />
     <title>{{ .Title }} - {{ .Site.Title }}</title>
-    <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}" />
-    <meta name="twitter:site" content="{{ .Site.Title }}" />
-    <meta property="og:site_name" content="{{ .Site.Title }}" />
-    <meta property="og:type" content="website" />
 
+    <!-- TWITTER CARD META'S -->
+    <meta name="twitter:card" content="summary" />
+    {{ if .Site.Params.twitter_username }}
+      <meta name="twitter:author" content="@{{ .Site.Params.twitter_username }}" />
+    {{ end }}
+    <meta property="twitter:title" content="{{ .Title }} - {{ .Site.Title }}" />
     {{ if or .Params.description .Summary }}
       <meta
-        name="description"
-        content="{{ if isset .Params "description" }} {{ .Description }} {{ else }} {{ .Summary }} {{ end }}"
-      />
-      <meta
-        name="twitter:card"
-        content="{{ if isset .Params "description" }} {{ .Description }} {{ else }} {{ .Summary }} {{ end }}"
-      />
-      <meta
-        property="og:description"
-        content="{{ if isset .Params "description" }} {{ .Description }} {{ else }} {{ .Summary }} {{ end }}"
+        name="twitter:description"
+        content="{{ if isset .Params "description" }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}"
       />
     {{ end }}
 
+    <!-- OPENGRAPH META'S -->
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}" />
     {{ if isset .Params "thumbnail" }}
       <meta property="og:image" content="{{ .Site.BaseURL }}images/{{ .Params.Thumbnail }}" />
     {{ end }}
+    {{ if or .Params.description .Summary }}
+      <meta
+        property="og:description"
+        content="{{ if isset .Params "description" }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}"
+      />
+    {{ end }}
 
+    <!-- META DESCRIPTION -->
+    {{ if or .Params.description .Summary }}
+      <meta
+        name="description"
+        content="{{ if isset .Params "description" }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}"
+      />
+    {{ end }}
+
+    <!-- META AUTHOR -->
     {{ if or .Params.author .Site.Author }}
       <meta
         name="author"
-        content="{{ if isset .Params "author" }} {{ .Params.Author }} {{ else }} {{ .Site.Author }} {{ end }}"
+        content="{{ if isset .Params "author" }}{{ .Params.Author }}{{ else }}{{ .Site.Author }}{{ end }}"
       />
     {{ end }}
 

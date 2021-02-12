@@ -5,6 +5,7 @@ title = "Don Nisnoni's Blog"
 
 [params]
 author = "Don Alfons Nisnoni"
+twitter_username = "AlfonsDon"
 
 [taxonomies]
 tag = "tags"
