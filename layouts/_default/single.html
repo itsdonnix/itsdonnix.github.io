@@ -1,4 +1,8 @@
 {{ define "main" }}
-  <h2>{{ .Title }}</h2>
-  {{ .Content }}
+  <article class="post">
+    <header class="my-3"><h2>{{ .Title }}</h2></header>
+    <section class="markdown-body">
+      {{ .Content }}
+    </section>
+  </article>
 {{ end }}
