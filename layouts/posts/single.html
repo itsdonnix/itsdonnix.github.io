@@ -14,6 +14,10 @@
         </section>
       {{ end }}
 
+      {{ if isset .Params "thumbnail" }}
+        <img class="mb-5 rounded-md" src="/images/{{ .Params.Thumbnail }}" {{ if isset .Params "thumbnail_alt" }} alt="{{ .Params.Thumbnail_Alt }}"  {{end}} />
+      {{ end }}
+
       {{ .Content }}
     </main>
 

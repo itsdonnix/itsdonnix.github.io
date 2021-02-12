@@ -8,9 +8,9 @@ tags:
   - others
   - pascal
   - story
+thumbnail: "programming-coding-computer-scripts.jpg"
+thumbnail_alt: "Programming"
 ---
-
-<img class="mb-5 rounded-md" src="/images/programming-coding-computer-scripts.jpg" alt="programming"/>
 
 It's almost six years since the first time I learn programming.
 But I never think of making my own site/blog. Finally I got it in 2021 🥳.
