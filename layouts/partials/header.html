@@ -3,8 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    {{ $styles := resources.Get "css/main.css" }}
+    {{ $styles = $styles | resources.PostCSS (dict "inlineImports" true) }}
+
+    {{ if hugo.IsProduction }}
+      {{ $styles = $styles | minify }}
+    {{ end }}
+
+    <link href="{{ $styles.Permalink }}" rel="stylesheet" />
+
     <link rel="icon" href="/icons/favicon-96x96.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png" />
@@ -80,15 +90,5 @@
       rel="stylesheet"
     />
 
-    {{ $styles := resources.Get "css/main.css" }}
-    {{ $styles = $styles | resources.PostCSS (dict "inlineImports" true) }}
-
-    {{ if hugo.IsProduction }}
-      {{ $styles = $styles | minify }}
-    {{ end }}
-
-    <link href="{{ $styles.Permalink }}" rel="stylesheet" />
-
     <meta name="google-site-verification" content="gq8ZodQmAw_AXWy6TdTFYrQF2mHgaSm5OO85gmyw9BY" />
   </head>
-</html>
