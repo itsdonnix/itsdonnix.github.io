@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <h2 class="page-main-title">{{ .Title }}</h2>
+
+  <div class="flex gap-2">
+    {{ range .Pages }}
+      <a class="p-1 mr-2" href="{{ .Permalink }}">
+        #{{ .Title }}
+        <span>({{ len .Pages }})</span>
+      </a>
+    {{ end }}
+  </div>
+{{ end }}
