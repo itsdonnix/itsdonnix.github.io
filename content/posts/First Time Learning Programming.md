@@ -13,9 +13,9 @@ thumbnail_alt: "Programming"
 ---
 
 It's almost six years since the first time I learn programming.
-But I never think of making my own site/blog. Finally I got it in 2021 🥳.
+But I never think of making my own site/blog. Finally, I got it in 2021 🥳.
 
-So, on my first post I will tell about my story when the first time I learn programming 👨‍💻.
+So, in my first post, I will tell my story when the first time I learn programming 👨‍💻.
 
 I started learning programming back in 2015 at STIKOM Uyelindo College.
 
@@ -73,16 +73,16 @@ this program looks bad, unlike other applications I have opened before.
 The first thing the lecturer explained was algorithms, he said,
 this was the most important thing in computer programming.
 
-The algorithm itself **_"is a step by step structured to solve a problem"_** he said.
+The algorithm itself **_" is a step by step structured to solve a problem"_** he said.
 
 Then he explained the diagrams in algorithms and gave us small exercises for
 solving a problem topic and steps for solving them.
 
 ### First Program
 
-We were simply display a text to screen,
+We simply displayed a text to screen,
 simply display _"Hello World"_ but I was happy about that,
-it looks reallt cool 🤩!
+it looks cool 🤩!
 
 ```pascal
 program Hello;
