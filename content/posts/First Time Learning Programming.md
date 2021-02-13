@@ -73,7 +73,7 @@ this program looks bad, unlike other applications I have opened before.
 The first thing the lecturer explained was algorithms, he said,
 this was the most important thing in computer programming.
 
-The algorithm itself **_" is a step by step structured to solve a problem"_** he said.
+The algorithm itself **_"is a step by step structured to solve a problem"_** he said.
 
 Then he explained the diagrams in algorithms and gave us small exercises for
 solving a problem topic and steps for solving them.
