@@ -8,12 +8,6 @@
     </header>
 
     <main class="markdown-body">
-      {{ if isset .Params "description" }}
-        <section class="mb-5 text-lg font-bold description">
-          {{ .Description }}
-        </section>
-      {{ end }}
-
       {{ if isset .Params "thumbnail" }}
         <img class="mb-5 rounded-md" src="/images/{{ .Params.Thumbnail }}" />
       {{ end }}
