@@ -164,7 +164,7 @@
 }
 
 .markdown-body p {
-  font-size: 18px;
+  font-size: 1em;
   word-spacing: 1px;
 }
 
@@ -825,4 +825,13 @@
 .markdown-body .task-list-item input {
   margin: 0 0.2em 0.25em -1.6em;
   vertical-align: middle;
+}
+
+@screen md {
+  .markdown-body {
+    font-size: 1.2em;
+  }
+  .post .title {
+    font-size: 2em;
+  }
 }
