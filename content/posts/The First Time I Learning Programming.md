@@ -76,6 +76,4 @@ especially if you learn a strict and disciplined programming language like Pasca
 
 In my experience, you must have the intention, be diligent, focus, and never give up, especially when you get an error. A programmer has to get used to errors, this is like our daily food. Oh yes, one of the most important things is to understand the algorithm. So, if you're new to programming, just keep learning and keep getting curious because **_"Programmers are wizards of the future"_** says _Gabe Newell_, Founder, and CEO of Steam.
 
-> This post is originally from my blog, [First Time Learning Programming](https://donnisnoni.github.io/posts/the-first-time-i-learning-programming)
-
 This is my first post ever, There is so much wrong grammar's there 😅. I hope you guys found it useful and please give me feedback 🙏. Thank you guys for reading this 🙌!
