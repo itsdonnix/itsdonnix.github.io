@@ -34,7 +34,7 @@ jobs:
       # the hugo_stats.json file is generated after hugo run postcss
 
       - name: Hugo Build
-        run: hugo --minify && hugo --minify
+        run: hugo baseURL https://donnisnoni.github.io  --minify && hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
