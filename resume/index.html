@@ -73,6 +73,10 @@
         margin-left: 2em;
       }
 
+      .hover\:text-decoration-none:hover {
+        text-decoration: none;
+      }
+
       @page {
         margin: 10px;
         size: auto;
@@ -314,12 +318,21 @@
       Don Alfons Nisnoni
     </footer>
 
-    <button
-      onclick="print()"
-      class="fixed px-4 py-2 text-white bg-blue-800 rounded-md shadow-md cursor-pointer bottom-5 right-5 print print:hidden"
-      title="Print this resume"
-    >
-      Print
-    </button>
+    <div class="fixed flex flex-col gap-1 md:flex-row bottom-5 right-5 print:hidden">
+      <button
+        onclick="print()"
+        class="px-4 py-2 text-white bg-blue-800 rounded-md shadow-md cursor-pointer"
+        title="Print this resume"
+      >
+        Print
+      </button>
+      <a
+        href="resume.pdf"
+        class="block px-4 py-2 text-white bg-blue-800 rounded-md shadow-md cursor-pointer hover:text-decoration-none tex"
+        title="The PDF version of this resume"
+      >
+        PDF
+      </a>
+    </div>
   </body>
 </html>
