@@ -17,4 +17,4 @@ lecture is introduced to me on my campus. Since then, I falling in love with web
 ### Education Background
 
 A computer science bachelor's degree graduation from [STIKOM Uyelindo Kupang](http://uyelindo.ac.id).
-I studied there for 8 semesters starting from august 2015 to december 2019 and then graduated in November 2020 with a GPA of **3.47**.
+I studied there for 8 semesters starting from august 2015 to december 2019 and then graduated in November 2020 with a GPA of **3.44**.
