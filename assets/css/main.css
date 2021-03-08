@@ -81,7 +81,7 @@
 .main-header .brand {
   color: var(--base-font-color);
   display: block;
-  font-family: var(--font-serif);
+  /* font-family: var(--font-serif); */
   font-size: 26px;
 }
 
