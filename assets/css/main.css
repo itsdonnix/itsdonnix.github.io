@@ -82,6 +82,7 @@
   color: var(--base-font-color);
   display: block;
   /* font-family: var(--font-serif); */
+  text-decoration: none;
   font-size: 26px;
 }
 
