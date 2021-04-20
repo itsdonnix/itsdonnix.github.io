@@ -24,7 +24,7 @@ jobs:
           node-version: "15.7.0"
 
       - name: Install PostCSS CLI
-        run: sudo npm install -g postcss-cli@latest autoprefixer@latest
+        run: sudo npm install -g tailwindcss postcss-cli@latest autoprefixer@latest
 
       - name: Install Dependencies
         run: yarn
