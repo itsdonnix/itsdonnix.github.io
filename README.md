@@ -1,1 +1,1 @@
-#### Hi! This is just my personal site!
+#### Hi! This is my personal site repository!
