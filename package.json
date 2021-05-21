@@ -10,7 +10,7 @@
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.2.4",
     "cssnano": "^5.0.3",
-    "cssnano-preset-advanced": "^5.0.1",
+    "cssnano-preset-advanced": "^5.1.0",
     "pdf-lib": "^1.16.0",
     "postcss": "^8.2.15",
     "postcss-scss": "^3.0.5",
