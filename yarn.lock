@@ -152,7 +152,7 @@ at-least-node@^1.0.0:
   resolved "https://registry.yarnpkg.com/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
-autoprefixer@^10.0.2, autoprefixer@^10.2.6:
+autoprefixer@^10.2.0, autoprefixer@^10.2.6:
   version "10.2.6"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.2.6.tgz#aadd9ec34e1c98d403e01950038049f0eb252949"
   integrity sha512-8lChSmdU6dCNMCQopIf4Pe5kipkAGj/fvTMslCsih0uHpOrXOPUEVOmYMMqmw3cekQkSD7EhIeuYl5y0BLdKqg==
@@ -426,19 +426,19 @@ cssesc@^3.0.0:
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
 
-cssnano-preset-advanced@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/cssnano-preset-advanced/-/cssnano-preset-advanced-5.1.1.tgz#97652704ef799f13fa22922c6a069c9434ef2123"
-  integrity sha512-ct1RkopkLdOTJScU6WqGMhPYpEzvd2A8lD0vXTYzm4xleZ8rloK9RRi9LC3QcnNyArzPHnHQ182ukrXvhqzzTg==
+cssnano-preset-advanced@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/cssnano-preset-advanced/-/cssnano-preset-advanced-5.1.2.tgz#859bb643e86b32d9fdd5f56ff47f2ec7035da1af"
+  integrity sha512-Joym8pdrIKqzASYvyTwJ9FpkmEcrYToWKWMGVFSggindrEDOpe+FgNpWhWcv6Z7GDZ4kCC3p7PE/oPSGTc8/kw==
   dependencies:
-    autoprefixer "^10.0.2"
-    cssnano-preset-default "^5.1.1"
+    autoprefixer "^10.2.0"
+    cssnano-preset-default "^5.1.2"
     postcss-discard-unused "^5.0.1"
     postcss-merge-idents "^5.0.1"
     postcss-reduce-idents "^5.0.1"
     postcss-zindex "^5.0.1"
 
-cssnano-preset-default@^5.1.1, cssnano-preset-default@^5.1.2:
+cssnano-preset-default@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/cssnano-preset-default/-/cssnano-preset-default-5.1.2.tgz#5d4877a91769823c5da6bcebd54996ecdf8aca12"
   integrity sha512-spilp8LRw0sacuxiN9A/dyyPr6G/WISKMBKcBD4NMoPV0ENx4DeuWvIIrSx9PII2nJIDCO3kywkqTPreECBVOg==
