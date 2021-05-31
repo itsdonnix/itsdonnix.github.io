@@ -16,7 +16,7 @@
     "postcss-scss": "^3.0.5",
     "prettier": "^2.3.0",
     "prettier-plugin-go-template": "^0.0.10",
-    "puppeteer": "^9.1.1",
+    "puppeteer": "^10.0.0",
     "tailwindcss": "^2.1.2"
   },
   "scripts": {
