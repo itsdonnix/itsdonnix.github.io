@@ -8,7 +8,7 @@ description: "Don Nisnoni is a front-end web developer from Indonesia. He like t
 
 My name is _Don Alfons Nisnoni_. I'm a front-end web developer.
 
-I like to building things, especially web development things but mostly focus on front-end web development. I learn web development since 2015 when web programming lecture is introduced to me on my campus. Since then, I falling in love with web development and always looking forward building things and product with it. <!-- I just graduated back in november last year and currently looking for a job. -->
+I like to building things, especially web development things but mostly focus on front-end web development. I learn web development since 2015 when web programming lecture is introduced to me on my campus. Since then, I falling in love with web development and always looking forward building things and products with it. <!-- I just graduated back in november last year and currently looking for a job. -->
 
 ### Education Background
 
