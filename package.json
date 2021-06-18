@@ -12,7 +12,7 @@
     "cssnano": "^5.0.5",
     "cssnano-preset-advanced": "^5.1.2",
     "pdf-lib": "^1.16.0",
-    "postcss": "^8.3.0",
+    "postcss": "^8.3.5",
     "postcss-scss": "^3.0.5",
     "prettier": "^2.3.1",
     "prettier-plugin-go-template": "^0.0.10",
