@@ -17,7 +17,7 @@
     "prettier": "^2.3.1",
     "prettier-plugin-go-template": "^0.0.10",
     "puppeteer": "^10.0.0",
-    "tailwindcss": "^2.2.2"
+    "tailwindcss": "^2.2.4"
   },
   "scripts": {
     "generate-resume-pdf": "node ./scripts/generatePDF.js ./static/resume/index.html ./static/resume/resume.pdf \"Don Alfons Nisnoni's Resume\""
