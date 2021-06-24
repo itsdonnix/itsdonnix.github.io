@@ -17,4 +17,4 @@ I studied there for 8 semesters starting from august 2015 to december 2019 and t
 
 ### Connect with Me
 
-Let's talk! feel free to connect with me, I'm always open to it. Just take a look my contact list info [here](https://link.gallery/donnisnoni).
+Let’s talk! feel free to connect with me, I’m always open to it. Just take a look at my contact list [here](https://link.gallery/donnisnoni).
