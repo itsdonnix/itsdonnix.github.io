@@ -14,7 +14,7 @@
     "pdf-lib": "^1.16.0",
     "postcss": "^8.3.5",
     "postcss-scss": "^4.0.0",
-    "prettier": "^2.3.1",
+    "prettier": "^2.3.2",
     "prettier-plugin-go-template": "^0.0.10",
     "puppeteer": "^10.1.0",
     "tailwindcss": "^2.2.4"
