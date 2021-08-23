@@ -8,7 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
-    "autoprefixer": "^10.3.1",
+    "autoprefixer": "^10.3.2",
     "cssnano-preset-advanced": "^5.1.4",
     "cssnano": "^5.0.8",
     "pdf-lib": "^1.16.0",
