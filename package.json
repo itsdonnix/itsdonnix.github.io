@@ -8,7 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
-    "autoprefixer": "^10.3.4",
+    "autoprefixer": "^10.3.6",
     "cssnano-preset-advanced": "^5.1.4",
     "cssnano": "^5.0.8",
     "pdf-lib": "^1.16.0",
@@ -17,7 +17,7 @@
     "prettier-plugin-go-template": "^0.0.11",
     "prettier": "^2.4.1",
     "puppeteer": "^10.4.0",
-    "tailwindcss": "^2.2.15"
+    "tailwindcss": "^2.2.16"
   },
   "scripts": {
     "generate-resume-pdf": "node ./scripts/generatePDF.js ./static/resume/index.html ./static/resume/resume.pdf \"Don Alfons Nisnoni's Resume\""
