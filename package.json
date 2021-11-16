@@ -9,7 +9,7 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.4.0",
-    "cssnano-preset-advanced": "^5.1.4",
+    "cssnano-preset-advanced": "^5.1.7",
     "cssnano": "^5.0.8",
     "pdf-lib": "^1.17.0",
     "postcss-scss": "^4.0.1",
