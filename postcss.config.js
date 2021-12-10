@@ -1,4 +1,4 @@
-const PRODUCTION = process.env.HUGO_ENVIRONMENT === "production";
+const PRODUCTION = /* process.env.HUGO_ENVIRONMENT === "production" && */ process.env.NODE_ENV === "production";
 
 const purgecss = require("@fullhuman/postcss-purgecss")({
   content: ["./hugo_stats.json"],
@@ -11,6 +11,7 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
 module.exports = {
   syntax: "postcss-scss",
   plugins: [
+    require("postcss-import"),
     require("tailwindcss"),
     PRODUCTION && require("autoprefixer"),
     ...(PRODUCTION ? [purgecss] : []),
