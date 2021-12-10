@@ -92,6 +92,7 @@
   cursor: pointer;
   padding: 5px;
   user-select: none;
+  clip-path: circle();
 }
 
 /* purgecss start ignore */
