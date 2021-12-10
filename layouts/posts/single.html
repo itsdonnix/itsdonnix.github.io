@@ -9,7 +9,7 @@
 
     <main class="markdown-body">
       {{ if isset .Params "thumbnail" }}
-        <img class="mb-5 rounded-md" src="/images/{{ .Params.Thumbnail }}" />
+        <img class="mb-5 rounded-md" loading="lazy" src="/images/{{ .Params.Thumbnail }}" laz />
       {{ end }}
 
       {{ .Content }}
