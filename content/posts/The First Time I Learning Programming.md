@@ -16,7 +16,7 @@ It's almost six years since the first time I learn programming. But I never thin
 
 So, in my first post, I will tell my little story when the first time I learn programming 👨‍💻.
 
-I started learning programming back in 2015 at [STIKOM Uyelindo Kupang College](http://uyelindo.ac.id/).
+I started learning programming back in 2015 at <a href="https://uyelindo.ac.id/" rel="noreferrer nofollow">STIKOM Uyelindo Kupang College</a>.
 
 ## Before Goto College
 
