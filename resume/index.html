@@ -133,9 +133,18 @@
                 <span class="font-bold">Date of Birth:</span>
                 <span>18 September 1995</span> (<span id="age">0</span>)
                 <script>
-                  const bornYear = new Date(1995, 9, 18).getFullYear();
-                  const nowYear = new Date().getFullYear();
-                  document.getElementById("age").textContent = nowYear - bornYear + " years old";
+                  const bornDate = new Date(1995, 8, 18);
+                  const nowDate = new Date();
+                  const bornYear = bornDate.getFullYear();
+                  const nowYear = nowDate.getFullYear();
+                  let age = nowYear - bornYear - 1;
+                  if (
+                    nowDate.getMonth() >= bornDate.getMonth() &&
+                    nowDate.getDate() >= bornDate.getDate()
+                  ) {
+                    age += 1;
+                  }
+                  document.getElementById("age").textContent = age + " years old";
                 </script>
               </div>
 
