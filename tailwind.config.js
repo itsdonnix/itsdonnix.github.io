@@ -8,7 +8,12 @@ const config = {
     uniformColorPalette: true,
     extendedFontSizeScale: true,
   },
-  content: ["./layouts/**/*.html", "./content/**/*.md", "./content/**/*.html"],
+  content: [
+    "./layouts/**/*.html",
+    "./content/**/*.md",
+    "./content/**/*.html",
+    "./static/**/*.html",
+  ],
   darkMode: "class",
   theme: {
     screens: {

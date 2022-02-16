@@ -23,6 +23,6 @@
   },
   "scripts": {
     "generate-resume-pdf": "node ./scripts/generatePDF.js ./static/resume/index.html ./static/resume/resume.pdf \"Don Alfons Nisnoni's Resume\"",
-    "build-css": "NODE_ENV=production npx postcss ./assets/css/main.css -o ./public/css/main.min.css"
+    "build-css": "NODE_ENV=production postcss ./assets/css/main.css -o ./public/css/main.min.css && cp ./assets/css/github-markdown.css ./public/css/"
   }
 }
