@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 
+
 <body class="flex flex-col min-h-screen">
   <header class="flex p-3 mx-auto font-bold _container main-header">
     <div>
@@ -51,20 +52,30 @@
   </header>
 
   <main class="p-3 mx-auto main-section _container">
-    {{ block "main" . }} {{ end }}
+    {{ block "main" . }}{{ end }}
   </main>
 
   <footer class="flex gap-1 p-2 mx-auto mt-auto main-footer _container">
-    <a rel="noreferrer" target="_blank" title="Twitter" href="https://twitter.com/AlfonsDon">
+    <a
+      rel="noreferrer nofollow"
+      target="_blank"
+      title="Twitter"
+      href="https://twitter.com/AlfonsDon"
+    >
       twitter
     </a>
     •
-    <a rel="noreferrer" target="_blank" title="GitHub" href="https://github.com/donnisnoni">
+    <a
+      rel="noreferrer nofollow"
+      target="_blank"
+      title="GitHub"
+      href="https://github.com/donnisnoni"
+    >
       github
     </a>
     •
     <a
-      rel="noreferrer"
+      rel="noreferrer nofollow"
       target="_blank"
       title="Source Code"
       href="https://github.com/donnisnoni/donnisnoni.github.io"
