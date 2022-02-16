@@ -26,15 +26,11 @@ jobs:
         with:
           node-version: "14.13.1"
 
-
       # - name: Install PostCSS CLI
       #   run: sudo npm install -g tailwindcss postcss-cli@latest autoprefixer@latest
 
       - name: Install Dependencies
         run: yarn
-
-      - name: Generate Resume PDF
-        run: yarn generate-resume-pdf
 
       # Note that this is workaround
       # We must build it twice because of
@@ -42,6 +38,9 @@ jobs:
 
       - name: Hugo Build
         run: hugo --baseURL https://donnisnoni.github.io  --minify && hugo --minify && yarn build-css
+
+      - name: Generate Resume PDF
+        run: yarn generate-resume-pdf
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
