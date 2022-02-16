@@ -12,7 +12,7 @@ I like to building things, especially web development things but mostly focus on
 
 ### Education Background
 
-I'm a computer science bachelor's degree graduation from [STIKOM Uyelindo Kupang](http://uyelindo.ac.id).
+I'm a computer science diploma's degree graduation from [STIKOM Uyelindo Kupang](http://uyelindo.ac.id).
 I studied there for 8 semesters starting from august 2015 to december 2019 and then graduated in November 2020 with a GPA of **3.44**.
 
 ### Connect with Me
