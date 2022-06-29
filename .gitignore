@@ -3,3 +3,4 @@ public
 resources/_gen
 hugo_stats.json
 _site
+.hugo_build.lock
