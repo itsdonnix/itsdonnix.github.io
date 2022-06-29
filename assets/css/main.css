@@ -3,7 +3,6 @@
 @import "tailwindcss/utilities";
 @import "github-markdown.css";
 
-
 :root {
   --base-bg-color: #fff;
   --base-font-color: #2f2f3a;
@@ -170,6 +169,10 @@
   margin-right: 5px;
   padding: 5px;
   text-decoration: none;
+}
+
+.post .thumbnail {
+  aspect-ratio: 16/9;
 }
 
 .hr-border {
