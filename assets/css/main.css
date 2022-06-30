@@ -148,6 +148,41 @@
   display: none;
 }
 
+.main-section {
+  flex-grow: 1;
+}
+
+.my-avatar {
+  max-width: 200px;
+  border-radius: 58% 42% 69% 31% / 48% 64% 36% 52%;
+  transition: 0.35s ease-in-out;
+  transition-property: border-radius, transform;
+  box-shadow: 0.5px 2px 5px currentColor;
+}
+
+.footer-separator {
+  display: none;
+}
+
+.footer-links {
+  flex-direction: column;
+}
+
+.footer-links a {
+  text-align: center;
+}
+
+@media screen and (min-width: 460px) {
+  .footer-links {
+    flex-direction: row;
+  }
+
+  .footer-separator {
+    display: initial;
+    flex-basis: auto;
+  }
+}
+
 /* purgecss end ignore */
 
 .page-main-title {
@@ -220,18 +255,6 @@
 
 .hr-border {
   border-top: 2px dashed var(--main-header-border-color);
-}
-
-.main-section {
-  flex-grow: 1;
-}
-
-.my-avatar {
-  max-width: 200px;
-  border-radius: 58% 42% 69% 31% / 48% 64% 36% 52%;
-  transition: 0.35s ease-in-out;
-  transition-property: border-radius, transform;
-  box-shadow: 0.5px 2px 5px currentColor;
 }
 
 @import "github-markdown.css";
