@@ -179,4 +179,8 @@
   border-top: 2px dashed var(--main-header-border-color);
 }
 
+.main-section {
+  flex-grow: 1;
+}
+
 @import "github-markdown.css";
