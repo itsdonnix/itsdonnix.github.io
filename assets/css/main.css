@@ -107,7 +107,6 @@
   stroke-width: 6;
 }
 
-
 ._container {
   width: 100%;
   max-width: 800px;
@@ -116,12 +115,13 @@
 .main-header {
   /* position: sticky; */
   background-color: var(--base-bg-color);
-  border-bottom: 2px dashed var(--main-header-border-color);
+  /* border-bottom: 2px dashed var(--main-header-border-color); */
   align-items: center;
   /* top: 0; */
 }
 
-.brand path[fill], .menu path[fill] {
+.brand path[fill],
+.menu path[fill] {
   /* color: var(--base-font-color);
   display: block;
   font-family: var(--font-serif);
@@ -156,9 +156,9 @@
   margin: 10px 0;
 }
 
-.main-footer {
+/* .main-footer {
   border-top: 2px dashed var(--main-header-border-color);
-}
+} */
 
 /* ------------------------------- POST STYLES ------------------------------ */
 
@@ -224,6 +224,14 @@
 
 .main-section {
   flex-grow: 1;
+}
+
+.my-avatar {
+  max-width: 200px;
+  border-radius: 58% 42% 69% 31% / 48% 64% 36% 52%;
+  transition: 0.35s ease-in-out;
+  transition-property: border-radius, transform;
+  box-shadow: 0.5px 2px 5px currentColor;
 }
 
 @import "github-markdown.css";

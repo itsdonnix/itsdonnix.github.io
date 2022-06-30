@@ -1,32 +1,43 @@
 {{ define "main" }}
-  <article class="flex mt-4 mb-10">
-    <div class="mr-3">
-      <img
-        class="rounded-full"
-        width="200px"
-        height="200px"
-        src="https://avatars.githubusercontent.com/u/16399020?s=200&u=8eb8a5d850a476e09cc6a6085b32a9f44432779b&v=4"
-        alt="Don Nisnoni"
-        title="Don Nisnoni's profile picture"
-      />
-    </div>
+  <article class="flex flex-col mt-4 mb-10">
+    <img
+      class="rounded-full self-center my-avatar"
+      width="200px"
+      height="200px"
+      src="https://avatars.githubusercontent.com/u/16399020?s=200&u=8eb8a5d850a476e09cc6a6085b32a9f44432779b&v=4"
+      alt="Don Nisnoni"
+    />
     <div class="markdown-body">
-      <p><b>Hello...</b></p>
+      <p><strong>Hello…</strong></p>
       <p>
-        My name is Don Alfons Nisnoni. Im a passionate, motivated, and creative web developer with 2 years of experience.
-        <a href="/about" title="More about me">👉 more about me</a>
+        My name is <em>Don Alfons Nisnoni</em>. I’m a passionate, motivated, and creative web
+        developer with 2 years of experience. Mostly focused on front-end, but has the flexibility
+        and experience to work on back-end as well. Experienced with NodeJS, VueJS, ReactJS, PHP,
+        and testing.
+      </p>
+
+      <p>
+        I am very enthusiastic and always eager to learn more about technology especially web
+        development both front-end and back-end. I always look forward to building things and
+        products with it.
+
+        <!-- I just graduated back in november last year and currently looking for a job. -->
+      </p>
+
+      <p>
+        <a href="/about" class="">👉 more about me</a>
       </p>
     </div>
   </article>
 
-  <h2 class="page-main-title">Recent Posts</h2>
+  <!-- <h2 class="page-main-title">Recent Posts</h2> -->
 
-  {{ with .Site.GetPage "section" "/posts" }}
+  <!-- {{ with .Site.GetPage "section" "/posts" }}
     {{ range first 5 .Pages }}
       {{ partial "post-list.html" . }}
     {{ end }}
     <div class="flex">
       <a class="ml-auto" href="./posts" rel="prefetch" title="All Posts">All Posts »</a>
     </div>
-  {{ end }}
+  {{ end }} -->
 {{ end }}
