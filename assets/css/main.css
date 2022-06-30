@@ -164,18 +164,18 @@
   display: none;
 }
 
-.footer-links {
+/* .footer-links {
   flex-direction: column;
-}
+} */
 
 .footer-links a {
   text-align: center;
 }
 
-@media screen and (min-width: 460px) {
-  .footer-links {
+@media screen and (min-width: 450px) {
+  /* .footer-links {
     flex-direction: row;
-  }
+  } */
 
   .footer-separator {
     display: initial;
