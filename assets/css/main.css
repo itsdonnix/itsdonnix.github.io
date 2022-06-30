@@ -79,12 +79,13 @@
   /* top: 0; */
 }
 
-.main-header .brand {
-  color: var(--base-font-color);
+.brand path[fill] {
+  /* color: var(--base-font-color);
   display: block;
-  /* font-family: var(--font-serif); */
+  font-family: var(--font-serif);
   text-decoration: none;
-  font-size: 26px;
+  font-size: 26px; */
+  fill: var(--base-font-color);
 }
 
 .toggle-dark {
