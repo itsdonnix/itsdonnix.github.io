@@ -67,6 +67,27 @@
   }
 }
 
+._container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.main-header {
+  /* position: sticky; */
+  background-color: var(--base-bg-color);
+  /* border-bottom: 2px dashed var(--main-header-border-color); */
+  align-items: center;
+  /* top: 0; */
+}
+
+.toggle-dark {
+  cursor: pointer;
+  padding: 5px;
+  user-select: none;
+  clip-path: circle();
+}
+
+/* purgecss start ignore */
 .menu {
   background-color: transparent;
   cursor: pointer;
@@ -107,19 +128,6 @@
   stroke-width: 6;
 }
 
-._container {
-  width: 100%;
-  max-width: 800px;
-}
-
-.main-header {
-  /* position: sticky; */
-  background-color: var(--base-bg-color);
-  /* border-bottom: 2px dashed var(--main-header-border-color); */
-  align-items: center;
-  /* top: 0; */
-}
-
 .brand path[fill],
 .menu path[fill] {
   /* color: var(--base-font-color);
@@ -129,15 +137,6 @@
   font-size: 26px; */
   fill: var(--base-font-color);
 }
-
-.toggle-dark {
-  cursor: pointer;
-  padding: 5px;
-  user-select: none;
-  clip-path: circle();
-}
-
-/* purgecss start ignore */
 
 .toggle-dark svg {
   fill: var(--base-font-color);
