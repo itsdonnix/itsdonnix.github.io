@@ -20,11 +20,11 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.80.0"
+          hugo-version: "0.101.0"
 
       - uses: actions/setup-node@v2
         with:
-          node-version: "14.13.1"
+          node-version: "14.18.2"
 
       # - name: Install PostCSS CLI
       #   run: sudo npm install -g tailwindcss postcss-cli@latest autoprefixer@latest
