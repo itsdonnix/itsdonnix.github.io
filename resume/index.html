@@ -25,6 +25,10 @@
         font-size: 14px;
       }
 
+      a {
+        text-decoration: underline;
+      }
+
       /* .link {
         color: blue;
       } */
@@ -120,14 +124,16 @@
         <div class="flex flex-col mb-10 md:w-1/2">
           <h2 class="heading-2">PERSONAL DATA</h2>
           <div class="flex flex-col md:flex-row">
-            <img
-              class="mx-auto my-3 rounded-full shadow-md"
+          <div class="my-1 md:my-5">
+              <img
+              class="mx-auto my-auto md:my-2 rounded-full shadow-md"
               src="https://avatars.githubusercontent.com/u/16399020?s=200&u=8eb8a5d850a476e09cc6a6085b32a9f44432779b&v=4"
-              style="max-height:100px"
-              width="100px"
+              style="max-height:200px"
+              width="200px"
               alt="Don Alfons Nisnoni's profile picture"
               title="My profile picture"
             />
+          </div>
             <div class="mt-4 md:ml-10">
               <!-- DOB -->
               <div>
@@ -153,8 +159,7 @@
               <div>
                 <span class="font-bold">Address:</span>
                 <span>
-                  Semangka street, Amnesi, Kota Raja sub-district, Kupang city, East Nusa Tenggara,
-                  Indonesia
+                 Rata Kuta Street 107 No. 4 <br> KUTA, KAB. BADUNG, BALI, ID 80361
                 </span>
               </div>
 
@@ -298,7 +303,7 @@
           <h2 class="heading-2">EXPERIENCES</h2>
 
           <div class="working-item">
-            <h3 class="heading-3">Web Developer</h3>
+            <h3 class="heading-3">Web Developer & IT Support</h3>
             <p>
               Feb 2020 - Aug 2020 @
               <a href="http://uyelindo.ac.id" target="_blank" rel="noreferer noopener nofollow"
@@ -340,13 +345,13 @@
                   rel="noreferer noopener nofollow"
                   >vlingo/auth
                 </a>
-                UI
+                UI using SvelteKit framework
               </li>
             </ul>
           </div>
 
           <div class="working-item section">
-            <h3 class="heading-3 section">Front-End Web Developer</h3>
+            <h3 class="heading-3 section">Full-time Front-End Web Developer</h3>
             <p>
               May 2021 - Present @
               <b
@@ -357,40 +362,13 @@
             </p>
             <ul>
               <li>
-                Maintain
-                <a href="https://alphien.com" target="_blank" rel="noreferer noopener nofollow"
-                  >Alphien</a
-                >
-                and
-                <a
-                  href="https://dashboard.alphien.com"
-                  target="_blank"
-                  rel="noreferer noopener nofollow"
-                  >Alphien Dashboard</a
-                >
-                using VueJS and NuxtJS
+                Maintain NuxtJS and VueJS websites
               </li>
               <li>
-                Maintain
-                <a
-                  href="https://domainedesmeuniers.com"
-                  target="_blank"
-                  rel="noreferer noopener nofollow"
-                  >Domaine Des Meuniers</a
-                >
-                and
-                <a href="https://theecolosges.com" target="_blank" rel="noreferer noopener nofollow"
-                  >Hotel De La Poste</a
-                >, and website using Laravel
+                Maintain Laravel websites
               </li>
               <li>
-                Extending a discourse forum (
-                <a
-                  href="https://forum.alphien.com"
-                  target="_blank"
-                  rel="noreferer noopener nofollow"
-                  >Alphien's Forum</a
-                >) (Develop discourse widgets and extensions)
+                Extending a discourse forum (Develop discourse widgets and extensions)
               </li>
               <li>Develop JupyterLab extensions</li>
             </ul>
@@ -414,7 +392,7 @@
       </button>
       <a
         href="resume.pdf"
-        class="block px-4 py-2 text-white bg-blue-800 rounded-md shadow-md cursor-pointer hover:text-decoration-none tex"
+        class="block px-4 py-2 text-white bg-blue-800 rounded-md shadow-md cursor-pointer hover:text-decoration-none no-underline"
         title="The PDF version of this resume"
       >
         PDF
