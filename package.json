@@ -22,8 +22,8 @@
     "tailwindcss": "^3.0.23"
   },
   "scripts": {
-    "generate-resume-pdf": "node ./scripts/generatePDF.js ./public/resume/index.html ./public/resume/resume.pdf \"Don Alfons Nisnoni's Resume\"",
-    "build-css": "NODE_ENV=production postcss ./assets/css/main.css -o ./public/css/main.min.css && cp ./assets/css/github-markdown.css ./public/css/",
-    "dev": "npx nodemon -e \"html, css, js, md toml\" -i public   -x \"clear; hugo; npx postcss ./assets/css/main.css -o ./public/css/main.min.css \""
+    "generate-resume-pdf": "node ./scripts/generatePDF.js ./static/resume/index.html ./public/resume/resume.pdf \"Don Alfons Nisnoni's Resume\"",
+    "build-css": "NODE_ENV=production postcss ./assets/css/main.css -o ./public/css/main.min.css",
+    "dev": "npx nodemon -e \"html, css, js, md toml\" -i public -x \"clear; hugo; npx postcss ./assets/css/main.css -o ./public/css/main.min.css \""
   }
 }
