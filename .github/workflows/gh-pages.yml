@@ -37,7 +37,7 @@ jobs:
       # the hugo_stats.json file is generated after hugo run postcss
 
       - name: Hugo Build
-        run: hugo --baseURL https://donnisnoni.github.io  --minify && hugo --minify && yarn build-css
+        run: hugo --minify && yarn build-css
 
       - name: Generate Resume PDF
         run: yarn generate-resume-pdf
