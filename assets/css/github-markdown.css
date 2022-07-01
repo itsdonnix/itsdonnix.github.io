@@ -120,8 +120,8 @@
 }
 
 .markdown-body a {
-  color: var(--anchor-font-color);
-  text-decoration: none;
+  /* color: var(--anchor-font-color); */
+  text-decoration: underline;
 }
 
 .markdown-body a:hover {
