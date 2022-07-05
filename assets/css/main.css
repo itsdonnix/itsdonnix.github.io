@@ -4,13 +4,13 @@
 @import "./github-markdown.css";
 
 :root {
-  --base-bg-color: #fff;
-  --base-font-color: #2f2f3a;
-  --main-header-border-color: #cedece;
-  --post-info-font-color: #6c7172;
-  --anchor-font-color: #2c5cc4;
-  --code-bg-color: #1b1f230d;
-  --blockquote-font-color: #6a737d;
+  --base-bg-color: hsl(0, 0%, 100%);
+  --base-font-color: hsl(240, 10%, 21%);
+  --main-header-border-color: hsl(120, 20%, 84%);
+  --post-info-font-color: hsl(190, 3%, 44%);
+  --anchor-font-color: hsl(221, 63%, 47%);
+  --code-bg-color: hsla(210, 13%, 12%, 0.051);
+  --blockquote-font-color: hsl(212, 8%, 45%);
   --font-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   --font-serif: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -18,12 +18,12 @@
 /* purgecss start ignore */
 
 :root.dark {
-  --base-bg-color: #1a1a2b;
-  --base-font-color: #fff;
-  --post-info-font-color: #aab1b3;
-  --anchor-font-color: #ab83f4;
-  --code-bg-color: rgb(211 232 254 / 5%);
-  --blockquote-font-color: #94989e;
+  --base-bg-color: hsl(240, 25%, 14%);
+  --base-font-color: hsl(0, 0%, 100%);
+  --post-info-font-color: hsl(193, 6%, 68%);
+  --anchor-font-color: hsl(261, 84%, 74%);
+  --code-bg-color: hsla(211, 96%, 91%, 0.05);
+  --blockquote-font-color: hsl(216, 5%, 60%);
 }
 
 /* purgecss end ignore */
