@@ -128,18 +128,13 @@
   stroke-width: 6;
 }
 
-.brand path[fill],
-.menu path[fill] {
+svg .fill {
   /* color: var(--base-font-color);
   display: block;
   font-family: var(--font-serif);
   text-decoration: none;
   font-size: 26px; */
-  fill: var(--base-font-color);
-}
-
-.toggle-dark svg {
-  fill: var(--base-font-color);
+  fill: var(--base-font-color) !important;
 }
 
 :root:not(.dark) .toggle-dark .light-icon,
