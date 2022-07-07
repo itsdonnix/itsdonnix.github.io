@@ -5,8 +5,11 @@
   <header class="flex p-3 mx-auto font-bold _container main-header">
     <div
       class="menu flex items-center"
-      onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-      aria-label="Main Menu"
+      onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));this.setAttribute('aria-checked', this.classList.contains('opened'))"
+      role="switch"
+      aria-label="Menu"
+      title="Menu"
+      aria-checked="false"
     >
       <svg width="36" height="36" viewBox="0 0 100 100">
         <path

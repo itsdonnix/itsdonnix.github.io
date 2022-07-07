@@ -90,8 +90,9 @@
 /* purgecss start ignore */
 .menu {
   background-color: transparent;
+  clip-path: circle();
   cursor: pointer;
-  padding: 0;
+  user-select: none;
 }
 .line {
   fill: none;
