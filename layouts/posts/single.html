@@ -11,6 +11,7 @@
     <main class="markdown-body">
       {{ if isset .Params "thumbnail" }}
         {{ $image := .Resources.Get .Params.thumbnail }}
+        {{ $image = $image.Resize "500x" }}
         <img
           class="thumbnail mb-5 rounded-md"
           width="100%"
