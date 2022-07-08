@@ -49,7 +49,7 @@ async function main() {
   const title = argv.slice(2).join(" ");
 
   const relativePathToHtmlFile = path.relative(cwd, pathToHtmlFile);
-  let relativeOutputPath = path.relative(cwd, outputPath);
+  const relativeOutputPath = path.relative(cwd, outputPath);
 
   const pdf = await createPDF({
     pathToHtmlFile: relativePathToHtmlFile,
