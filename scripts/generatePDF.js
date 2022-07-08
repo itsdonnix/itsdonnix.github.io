@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 const { Buffer } = require("buffer");
 const { PDFDocument } = require("pdf-lib");
 const path = require("path");
+const cwd = process.cwd();
 
 async function createPDF({ pathToHtmlFile, title, format }) {
   const browser = await puppeteer.launch({
@@ -18,7 +18,7 @@ async function createPDF({ pathToHtmlFile, title, format }) {
     ],
   });
   const page = await browser.newPage();
-  await page.goto("file://" + path.join(process.cwd(), pathToHtmlFile), {
+  await page.goto("file://" + path.join(cwd, pathToHtmlFile), {
     waitUntil: "networkidle0",
   });
   let pdf = await page.pdf({
@@ -48,8 +48,8 @@ async function main() {
   const outputPath = argv[1];
   const title = argv.slice(2).join(" ");
 
-  const relativePathToHtmlFile = path.relative(process.cwd(), pathToHtmlFile);
-  let relativeOutputPath = path.relative(process.cwd(), outputPath);
+  const relativePathToHtmlFile = path.relative(cwd, pathToHtmlFile);
+  let relativeOutputPath = path.relative(cwd, outputPath);
 
   const pdf = await createPDF({
     pathToHtmlFile: relativePathToHtmlFile,
