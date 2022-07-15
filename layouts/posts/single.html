@@ -13,13 +13,19 @@
         {{ $image := .Resources.Get .Params.thumbnail }}
         {{ $image = $image.Resize "500x" }}
         <img
-          class="thumbnail mb-5 rounded-md"
+          class="mb-5 rounded-md thumbnail"
           width="100%"
           height="200px"
           src="{{ $image.RelPermalink }}"
           alt="{{ .Params.thumbnail_alt }}"
         />
       {{ end }}
+
+
+      <aside class="mb-10">
+        <h3 class="font-sans">Table of Contents</h3>
+        {{ .TableOfContents }}
+      </aside>
 
       {{ .Content }}
     </main>
