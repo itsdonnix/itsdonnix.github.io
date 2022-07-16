@@ -18,4 +18,4 @@ I'm a computer science diploma's degree graduation from [STIKOM Uyelindo Kupang]
 
 ### Connect with Me
 
-Let’s talk! feel free to connect with me, I’m always open to talk with you. Just take a look at my contact list [here](https://link.gallery/donnisnoni).
+Let’s talk! feel free to connect with me, I’m always open to talk with you. Just take a look at [my contact list](https://link.gallery/donnisnoni).
