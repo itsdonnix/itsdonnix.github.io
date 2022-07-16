@@ -153,7 +153,8 @@
 .markdown-body kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px var(--font-monospace);
+  font-size: 11px;
+  @apply font-monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;
@@ -197,7 +198,8 @@
 
 .markdown-body code,
 .markdown-body pre {
-  font-family: var(--font-monospace);
+  /* font-family: var(--font-monospace); */
+  @apply font-monospace;
   font-size: 0.9em;
 }
 
@@ -512,7 +514,8 @@
 .markdown-body kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px var(--font-monospace);
+  font-size: 11px;
+  @apply font-monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;

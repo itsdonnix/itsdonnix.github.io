@@ -23,6 +23,26 @@ const config = {
       xl: "1280px", // => @media (min-width: 1280px) { ... }
       "2xl": "1536px", // => @media (min-width: 1536px) { ... }
     },
+    fontFamily: {
+      sans: [
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji",
+      ],
+      serif: ["Lora", "Cambria", "Cochin", "Georgia", "Times", "Times New Roman", "serif"],
+      monospace: ["SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "monospace"],
+    },
   },
 };
 
