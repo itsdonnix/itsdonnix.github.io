@@ -23,7 +23,7 @@ async function createPDF({ pathToHtmlFile, title, format }) {
   });
   let pdf = await page.pdf({
     format: format || null,
-    landscape: true,
+    landscape: false,
     margin: {
       top: "20px",
       bottom: "20px",
