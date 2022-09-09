@@ -40,16 +40,24 @@
       </footer>
     {{ end }}
   </article>
-  <div id="graphcomment-widget mt-5"></div>
+  <div id="graphcomment-widget" class="mt-5"></div>
   <div id="graphcomment"></div>
   <script type="text/javascript">
     window.gc_params = { graphcomment_id: "donnisnoni", fixed_header_height: 0 };
     (function () {
-      const gc = document.createElement("script");
-      gc.type = "text/javascript";
-      gc.async = true;
-      gc.src = "https://graphcomment.com/js/integration.js?" + Math.round(Math.random() * 1e8);
-      (document.head || document.body).appendChild(gc);
+      const onScroll = function () {
+        const gcel = document.querySelector("#graphcomment-widget");
+        const rect = gcel.getBoundingClientRect();
+        if (rect.bottom - rect.height <= window.innerHeight) {
+          const gc = document.createElement("script");
+          gc.type = "text/javascript";
+          gc.async = true;
+          gc.src = "https://graphcomment.com/js/integration.js?" + Math.round(Math.random() * 1e8);
+          (document.head || document.body).appendChild(gc);
+          document.removeEventListener("scroll", onScroll);
+        }
+      };
+      document.addEventListener("scroll", onScroll, { passive: true });
     })();
   </script>
 {{ end }}
