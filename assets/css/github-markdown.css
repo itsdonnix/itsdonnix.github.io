@@ -56,7 +56,8 @@
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   color: var(--base-font-color);
-  font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif, Apple Color Emoji, Segoe UI Emoji;
+  /* font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif, Apple Color Emoji, Segoe UI Emoji; */
+  @apply font-serif;
   font-size: inherit;
   line-height: 1.5;
   word-wrap: break-word;
