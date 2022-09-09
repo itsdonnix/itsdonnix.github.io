@@ -9,6 +9,7 @@
   --main-header-border-color: hsl(120, 20%, 84%);
   --post-info-font-color: hsl(190, 3%, 44%);
   --anchor-font-color: hsl(221, 63%, 47%);
+  --anchor-bg-color: hsl(0, 0%, 90%);
   --code-bg-color: hsla(210, 13%, 12%, 0.051);
   --blockquote-font-color: hsl(212, 8%, 45%);
   /* --font-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace; */
@@ -22,6 +23,7 @@
   --base-font-color: hsl(0, 0%, 100%);
   --post-info-font-color: hsl(193, 6%, 68%);
   --anchor-font-color: hsl(261, 84%, 74%);
+  --anchor-bg-color: hsl(240, 25%, 25%);
   --code-bg-color: hsla(211, 96%, 91%, 0.05);
   --blockquote-font-color: hsl(216, 5%, 60%);
 }
@@ -60,9 +62,9 @@
     font-size: 1.7em;
   }
 
-  a {
+  /* a {
     color: var(--anchor-color);
-  }
+  } */
 
   a:hover {
     text-decoration: underline;

@@ -122,11 +122,28 @@
 .markdown-body a {
   /* color: var(--anchor-font-color); */
   /* text-decoration: underline; */
+  position: relative;
+  overflow-y: hidden;
+}
+
+.markdown-body a::before {
   border-bottom: 1px dotted currentColor;
+  bottom: 0;
+  content: "";
+  height: 10%;
+  position: absolute;
+  transition: height 0.1s linear;
+  width: 100%;
+  z-index: -1;
 }
 
 .markdown-body a:hover {
   text-decoration: initial;
+}
+
+.markdown-body a:hover::before {
+  background-color: var(--anchor-bg-color);
+  height: 100%;
 }
 
 .markdown-body strong {
