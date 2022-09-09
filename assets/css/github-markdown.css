@@ -56,8 +56,7 @@
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   color: var(--base-font-color);
-  font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif, Apple Color Emoji,
-    Segoe UI Emoji;
+  font-family: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif, Apple Color Emoji, Segoe UI Emoji;
   font-size: inherit;
   line-height: 1.5;
   word-wrap: break-word;
@@ -122,11 +121,11 @@
 .markdown-body a {
   /* color: var(--anchor-font-color); */
   /* text-decoration: underline; */
-  border-bottom: 1.5px solid currentColor;
+  border-bottom: 1px dotted currentColor;
 }
 
 .markdown-body a:hover {
-  text-decoration: none;
+  text-decoration: initial;
 }
 
 .markdown-body strong {
