@@ -20,7 +20,7 @@
       }
 
       body {
-        font-family: sans-serif;
+        font-family: "Montserrat", sans-serif;
         color: #292532;
         font-size: 14px;
       }
@@ -29,12 +29,17 @@
         text-decoration: underline;
       }
 
+      h2, h3, h4 {
+        border-left: 0.3rem solid #2e3066;
+        color: #26263c;
+        padding-left: 0.6rem;
+      }
+
       /* .link {
         color: blue;
       } */
 
       .header h1 {
-        font-family: "Montserrat", sans-serif;
         font-size: 2.3rem;
       }
 
@@ -52,7 +57,6 @@
 
       .heading-2,
       .heading-3 {
-        font-family: "Montserrat";
         font-weight: bold;
         position: relative;
       }
@@ -91,6 +95,11 @@
         text-decoration: none;
       }
 
+      .heading-3 ~ p {
+        padding: 0.3rem;
+        padding-left: 0.9rem;
+      }
+
       @page {
         margin: 10px;
         size: auto;
@@ -124,14 +133,14 @@
 
     <main class="flex flex-col w-full p-5 mb-10">
       <div class="flex flex-col w-full xl:flex-row">
-        <div class="flex flex-col mb-10">
+        <div class="flex flex-col mb-10 mr-3">
           <!-- SUMMARY -->
-          <h2 class="heading-2">SUMMARY</h2>
+          <h2 class="mb-1 heading-2">SUMMARY</h2>
           <div class="max-w-lg article">
             <p><em>Don</em> is a passionate, motivated, and creative web developer with work experience since 2020. He learning web development since 2015 and mostly focused on front-end web development but has the flexibility and experience to work on back-end web development as well. He experience with web technologies and tools such as NodeJS, MySQL, PHP, Laravel, ReactJS, and VueJS.</p> 
           </div>
         <div class="flex flex-col mt-5 mb-10">
-          <h2 class="heading-2">PERSONAL DATA</h2>
+          <h2 class="mb-1 heading-2">PERSONAL DATA</h2>
           <div class="flex flex-col md:flex-row">
           <!-- <div class="my-1 md:my-5">
               <img
@@ -240,22 +249,20 @@
         </div>
       </div>
 
-      <div class="flex flex-col w-full gap-2 xl:flex-row">
+      <div class="flex flex-col w-full gap-3 xl:flex-row">
         <!-- EDUCATION -->
         <div class="flex flex-col mb-10 section md:w-1/2 xl:w-1/3">
-          <h2 class="heading-2">EDUCATION</h2>
+          <h2 class="mb-1 heading-2">EDUCATION</h2>
           <h3 class="heading-3">
             Associate Degree of Information Technology at
-            <a href="http://uyelindo.ac.id" target="_blank" rel="noreferer noopener nofollow"
-              >STIKOM UYELINDO Kupang</a
-            >
+            <a href="http://uyelindo.ac.id" target="_blank" rel="noreferer noopener nofollow">STIKOM UYELINDO Kupang</a>
           </h3>
           <p>Jul 2015 - Dec 2019 - <b>GPA: 3.44</b></p>
         </div>
 
         <!-- SKILLS -->
         <div class="flex flex-col section md:w-1/2 xl:w-1/3">
-          <h2 class="heading-2">SKILLS</h2>
+          <h2 class="mb-1 heading-2">SKILLS</h2>
           <p>Thing's that I've touch so far:</p>
           <h3 class="heading-3">Software/Tools:</h3>
           <p>Git, GitHub, Docker, Netlify, Vercel, PostCSS, Hugo SSG, Discourse</p>
@@ -278,21 +285,35 @@
 
         <!-- EXPERIENCES -->
         <div class="mt-10 section md:w-1/2 xl:w-1/3 xl:mt-0">
-          <h2 class="heading-2">EXPERIENCES</h2>
+          <h2 class="mb-1 heading-2">EXPERIENCES</h2>
 
-          <div class="working-item">
-            <h3 class="heading-3">Web Developer & IT Support</h3>
+          <div class="working-item section">
+            <h3 class="heading-3 section">Full-time Front-End Web Developer</h3>
             <p>
-              Feb 2020 - Aug 2020 at
-              <a href="http://uyelindo.ac.id" target="_blank" rel="noreferer noopener nofollow"
-                ><b>STIKOM UYELINDO Kupang</b></a
-              >
+              May 2021 - Present at
+              <b>
+                <a href="https://alphien.com" target="_blank" rel="noreferer noopener nofollow">
+                  Alphien SAS
+                </a>
+                </b>
             </p>
             <ul>
-              <li>Build a website for improve student's online services.</li>
-              <li>Upgrade & improve campus main website.</li>
-              <li>Analyze and improve existing campus websites security and UI.</li>
-              <li>Upgrade campus tech stacks.</li>
+              <li>
+                Building and maintain NuxtJS and VueJS websites.
+              </li>
+              <li>
+                Building and maintain Laravel websites.
+              </li>
+              <li>
+                Extending a discourse forum (Develop discourse widgets and extensions).
+              </li>
+              <li>Develop JupyterLab extensions.</li>
+              <li>
+                Integrate PayPal payment with Laravel website.
+              </li>
+              <li>
+                Install and extending <a href="https://qloapps.com/" rel="nofollow noreferer" target="_blank">Qlo Hotel Reservation System</a>.
+              </li>
             </ul>
           </div>
 
@@ -324,26 +345,18 @@
           </div>
 
           <div class="working-item section">
-            <h3 class="heading-3 section">Full-time Front-End Web Developer</h3>
+            <h3 class="heading-3">Web Developer & IT Support</h3>
             <p>
-              May 2021 - Present at
-              <b>
-                <a href="https://alphien.com" target="_blank" rel="noreferer noopener nofollow">
-                  Alphien SAS
-                </a>
-                </b>
+              Feb 2020 - Aug 2020 at
+              <a href="http://uyelindo.ac.id" target="_blank" rel="noreferer noopener nofollow"
+                ><b>STIKOM UYELINDO Kupang</b></a
+              >
             </p>
             <ul>
-              <li>
-                Building and maintain NuxtJS and VueJS websites.
-              </li>
-              <li>
-                Building and maintain Laravel websites.
-              </li>
-              <li>
-                Extending a discourse forum (Develop discourse widgets and extensions).
-              </li>
-              <li>Develop JupyterLab extensions.</li>
+              <li>Build a website for improve student's online services.</li>
+              <li>Upgrade & improve campus main website.</li>
+              <li>Analyze and improve existing campus websites security and UI.</li>
+              <li>Upgrade campus tech stacks.</li>
             </ul>
           </div>
         </div>
