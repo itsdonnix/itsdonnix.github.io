@@ -1,0 +1,7 @@
+{{ define "main" }}
+  <h2 class="page-main-title">{{ .Title }}</h2>
+
+  {{ range (where .Pages "Type" "lyrics") }}
+    {{ partial "post-list.html" . }}
+  {{ end }}
+{{ end }}

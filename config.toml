@@ -8,6 +8,7 @@ twitter_username = "AlfonsDon"
 
 [taxonomies]
 tag = "tags"
+lyric = "lyrics"
 
 [build]
 writeStats = true

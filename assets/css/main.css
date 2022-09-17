@@ -267,4 +267,18 @@ svg .fill {
   border-top: 2px dashed var(--main-header-border-color);
 }
 
+.lyrics-body {
+  margin-top: 2rem;
+}
+
+.lyrics-body p {
+  font-size: 1.3rem;
+  line-height: 2.8rem;
+  cursor: default;
+}
+
+.lyrics-body p:hover {
+  font-weight: bold;
+}
+
 @import "github-markdown.css";
