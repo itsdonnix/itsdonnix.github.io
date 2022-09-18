@@ -1,8 +1,8 @@
 ---
 author: "Don Alfons Nisnoni"
-date: 2022-09-20T00:28:34+08:00
-# draft: true
+date: 2022-09-05T00:28:34+08:00
 title: "Shayad"
+slug: shayad-lyrics
 singer: Arijit Singh
 thumbnail: https://i1.sndcdn.com/artworks-BhB96c0fbATvQIan-CIwORQ-t500x500.jpg
 thumbnail_alt: Shayad Cover
