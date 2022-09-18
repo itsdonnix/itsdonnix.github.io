@@ -1,7 +1,6 @@
 {{ define "main" }}
   <h2 class="page-main-title">{{ .Title }}</h2>
-
-  {{ range .Pages }}
+  {{ range (where $.Site.RegularPages "Type" "lyrics") }}
     {{ partial "lyric-list.html" . }}
   {{ end }}
 {{ end }}
