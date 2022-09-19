@@ -179,9 +179,9 @@ svg .fill {
   margin-top: 10vh;
 }
 
-.footer-separator {
+/* .footer-separator {
   display: none;
-}
+} */
 
 /* .footer-links {
   flex-direction: column;
@@ -191,16 +191,16 @@ svg .fill {
   text-align: center;
 }
 
-@media screen and (min-width: 450px) {
-  /* .footer-links {
+/* @media screen and (min-width: 450px) { */
+/* .footer-links {
     flex-direction: row;
   } */
 
-  .footer-separator {
+/* .footer-separator {
     display: initial;
     flex-basis: auto;
-  }
-}
+  } */
+/* } */
 
 /* purgecss end ignore */
 
