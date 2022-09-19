@@ -16,7 +16,7 @@
     "postcss": "^8.4.12",
     "postcss-cli": "^10.0.0",
     "postcss-import": "^14.1.0",
-    "postcss-scss": "^4.0.4",
+    "postcss-scss": "^4.0.5",
     "prettier": "^2.7.1",
     "prettier-plugin-go-template": "^0.0.13",
     "puppeteer": "^16.0.0",
