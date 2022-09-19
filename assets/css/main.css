@@ -162,7 +162,17 @@ svg .fill {
   border-radius: 58% 42% 69% 31% / 48% 64% 36% 52%;
   transition: 0.35s ease-in-out;
   transition-property: border-radius, transform;
+  animation: border 4s ease-in-out infinite;
   box-shadow: 0.5px 2px 5px currentColor;
+}
+
+@keyframes border {
+  40% {
+    border-radius: 48% 53% 59% 55% / 58% 74% 25% 42%;
+  }
+  80% {
+    border-radius: 56% 47% 45% 20% / 58% 67% 45% 47%;
+  }
 }
 
 .main-footer {
