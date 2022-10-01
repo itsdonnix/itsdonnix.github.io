@@ -219,7 +219,7 @@ svg .fill {
 .post .title,
 .post-list .title {
   /* font-family: var(--font-serif); */
-  @apply font-serif;
+  /* @apply font-serif; */
   font-weight: bold;
 }
 
