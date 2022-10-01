@@ -29,6 +29,9 @@ jobs:
       # - name: Install PostCSS CLI
       #   run: sudo npm install -g tailwindcss postcss-cli@latest autoprefixer@latest
 
+      - name: Install PNPM
+        run: npm i -g pnpm
+
       - name: Install Dependencies
         run: pnpm install
 
