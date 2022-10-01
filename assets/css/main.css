@@ -166,6 +166,16 @@ svg .fill {
   box-shadow: 0.5px 2px 5px currentColor;
 }
 
+.socmed-links-wrapper a > svg {
+  opacity: 0.8;
+  transition: opacity 0.15s ease-in-out;
+  will-change: opacity;
+}
+
+.socmed-links-wrapper a:hover > svg {
+  opacity: 1;
+}
+
 @keyframes border {
   40% {
     border-radius: 48% 53% 59% 55% / 58% 74% 25% 42%;
