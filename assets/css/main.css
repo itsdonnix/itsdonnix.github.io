@@ -56,7 +56,7 @@
 
   h1 {
     font-size: 1.9em;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 7.5px;
   }
 
@@ -207,7 +207,7 @@ svg .fill {
 .page-main-title {
   font-size: 1.2em;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 0 0 0.63rem 0;
 }
 
 /* .main-footer {
