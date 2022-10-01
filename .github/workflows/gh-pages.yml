@@ -30,17 +30,17 @@ jobs:
       #   run: sudo npm install -g tailwindcss postcss-cli@latest autoprefixer@latest
 
       - name: Install Dependencies
-        run: yarn
+        run: pnpm install
 
       # Note that this is workaround
       # We must build it twice because of
       # the hugo_stats.json file is generated after hugo run postcss
 
       - name: Hugo Build
-        run: hugo --minify && yarn build-css
+        run: hugo --minify && pnpm run build-css
 
       - name: Generate Resume PDF
-        run: yarn generate-resume-pdf
+        run: pnpm run generate-resume-pdf
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
