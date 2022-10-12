@@ -1,4 +1,7 @@
 {
+	"$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/web-manifest.json",
+	"scope": "/",
+	"id": "com.donnisnoni.personal_website",
 	"short_name": "DonNisnoni",
 	"name": "Don Nisnoni",
 	"lang": "en",
