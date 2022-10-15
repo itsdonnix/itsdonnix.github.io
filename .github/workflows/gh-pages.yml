@@ -34,6 +34,11 @@ jobs:
 
       - name: Install Dependencies
         run: pnpm install
+        if: github.event_name != 'pull_request'
+
+      - name: Install Dependencies (for PR only)
+        run: pnpm install --no-frozen-lockfile
+        if: github.event_name == 'pull_request'
 
       # Note that this is workaround
       # We must build it twice because of
