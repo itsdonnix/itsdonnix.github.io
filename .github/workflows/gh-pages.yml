@@ -40,10 +40,6 @@ jobs:
         run: pnpm install --no-frozen-lockfile
         if: github.event_name == 'pull_request'
 
-      # Note that this is workaround
-      # We must build it twice because of
-      # the hugo_stats.json file is generated after hugo run postcss
-
       - name: Hugo Build
         run: hugo --minify && pnpm run build-css
 
