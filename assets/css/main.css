@@ -96,6 +96,11 @@
   padding: 5px;
   user-select: none;
   clip-path: circle();
+  transition: all 0.2s linear;
+}
+
+.toggle-dark:active {
+  transform: scale(1.35);
 }
 
 /* purgecss start ignore */
