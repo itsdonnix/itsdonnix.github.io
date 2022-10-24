@@ -3,32 +3,29 @@
     const toggleDarkEl = document.getElementById("toggle-dark");
     const htmlEl = document.querySelector("html");
 
-    function setDark(v) {
-      if (v) {
+    function setDark(dark, save = true) {
+      if (dark) {
         htmlEl.classList.add("dark");
       } else {
         htmlEl.classList.remove("dark");
       }
-      localStorage["dark"] = v;
-      toggleDarkEl.setAttribute("aria-checked", v);
+      if (save) {
+        localStorage["dark"] = dark;
+      }
+      toggleDarkEl.setAttribute("aria-checked", dark);
     }
 
-    if (undefined === localStorage["dark"]) {
-      localStorage["dark"] = false;
-    } else if (localStorage["dark"] === "true") {
+    if (localStorage["dark"] === "true") {
       setDark(true);
-    } else {
+    } else if (localStorage["dark"] === "false") {
       setDark(false);
+    } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setDark(true, false);
     }
 
     toggleDarkEl &&
       toggleDarkEl.addEventListener("click", function () {
         const isDark = htmlEl.classList.contains("dark");
-        if (!isDark) {
-          htmlEl.classList.add("dark");
-        } else {
-          htmlEl.classList.remove("dark");
-        }
         setDark(!isDark);
       });
   })();
