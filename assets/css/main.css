@@ -103,8 +103,7 @@
   transform: scale(1.35);
 }
 
-/* purgecss start ignore */
-.menu {
+/* .menu {
   background-color: transparent;
   clip-path: circle();
   cursor: pointer;
@@ -142,7 +141,9 @@
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 6;
-}
+} */
+
+/* purgecss start ignore */
 
 svg .fill {
   /* color: var(--base-font-color);

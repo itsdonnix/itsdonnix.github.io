@@ -1,8 +1,8 @@
 <header class="mx-auto font-bold _container main-header">
-  <div class="flex items-center p-3">
-    <div
+  <div class="flex items-center justify-between p-3">
+    <!-- <div
+    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));this.setAttribute('aria-checked', this.classList.contains('opened'))"
       class="flex items-center menu"
-      onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));this.setAttribute('aria-checked', this.classList.contains('opened'))"
       role="switch"
       aria-label="Menu"
       title="Menu"
@@ -19,12 +19,13 @@
           d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
         />
       </svg>
-    </div>
-    <a href="/" class="ml-auto">
+    </div> -->
+    <div style="width: 30px; height: 30px"></div>
+    <a href="/">
       {{ readFile "static/icons/don_xdev_header.svg" | safeHTML }}
     </a>
     <div
-      class="flex items-center ml-auto toggle-dark"
+      class="flex items-center toggle-dark"
       id="toggle-dark"
       role="switch"
       aria-label="Toggle Dark Mode"
