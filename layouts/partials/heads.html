@@ -31,13 +31,6 @@
   <meta name="theme-color" content="#feffff" />
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
   <link rel="alternate" type="application/rss+xml" title="Don Nisnoni's Blog RSS Feed" href="/index.xml" />
-  {{ $is_lyrics_page := eq .Page.Type "lyrics" }}
-  {{ if $is_lyrics_page }}
-    <title>{{ .Title }} by {{ .Page.Param "Singer" }} Lyrics</title>
-  {{ else }}
-    <title>{{ .Title }} • {{ .Site.Title }}</title>
-  {{ end }}
-
 
   <!-- TWITTER CARD META'S -->
   <meta name="twitter:card" content="summary" />
