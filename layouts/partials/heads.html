@@ -71,7 +71,8 @@
   <meta property="og:url" content="" />
   <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}" />
   {{ if isset .Params "thumbnail" }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}images/{{ .Params.Thumbnail }}" />
+    {{ $image := .Resources.Get .Params.thumbnail }}
+    <meta property="og:image" content="{{ $image.Permalink }}" />
   {{ end }}
   {{ if or .Params.description .Summary }}
     <meta property="og:description" content="{{ $description }}"/>
