@@ -33,6 +33,26 @@
   <link rel="alternate" type="application/rss+xml" title="Don Nisnoni's Blog RSS Feed" href="/index.xml" />
   <title>{{ .Title }} • {{ .Site.Title }}</title>
 
+  <!-- GET PAGE DESCRIPTION -->
+  {{ $description := "" }}
+  {{ if or .Params.description .Summary }}
+      {{ if isset .Params "description" }}
+        {{ $description = .Description }}
+      {{ else }}
+        {{ $description = .Summary }}
+      {{ end }}
+  {{ end }}
+
+  <!-- GET PAGE AUTHOR -->
+  {{ $author := "" }}
+  {{ if or .Params.author .Site.Author }}
+      {{ if isset .Params "author" }}
+        {{ $author = .Params.Author }}
+      {{ else }}
+        {{ $author = .Site.Author }}
+      {{ end }}
+  {{ end }}
+
 
   <!-- TWITTER CARD META'S -->
   <meta name="twitter:card" content="summary" />
@@ -41,14 +61,7 @@
   {{ end }}
   <meta property="twitter:title" content="{{ .Title }} • {{ .Site.Title }}" />
   {{ if or .Params.description .Summary }}
-    <meta
-      name="twitter:description"
-      content="{{ if isset .Params "description" }}
-        {{ .Description }}
-      {{ else }}
-        {{ .Summary }}
-      {{ end }}"
-    />
+    <meta name="twitter:description" content="{{ $description }}"/>
   {{ end }}
 
 
@@ -61,40 +74,19 @@
     <meta property="og:image" content="{{ .Site.BaseURL }}images/{{ .Params.Thumbnail }}" />
   {{ end }}
   {{ if or .Params.description .Summary }}
-    <meta
-      property="og:description"
-      content="{{ if isset .Params "description" }}
-        {{ .Description }}
-      {{ else }}
-        {{ .Summary }}
-      {{ end }}"
-    />
+    <meta property="og:description" content="{{ $description }}"/>
   {{ end }}
 
 
   <!-- META DESCRIPTION -->
   {{ if or .Params.description .Summary }}
-    <meta
-      name="description"
-      content="{{ if isset .Params "description" }}
-        {{ .Description }}
-      {{ else }}
-        {{ .Summary }}
-      {{ end }}"
-    />
+    <meta name="description" content="{{ $description }}"/>
   {{ end }}
 
 
   <!-- META AUTHOR -->
   {{ if or .Params.author .Site.Author }}
-    <meta
-      name="author"
-      content="{{ if isset .Params "author" }}
-        {{ .Params.Author }}
-      {{ else }}
-        {{ .Site.Author }}
-      {{ end }}"
-    />
+    <meta name="author" content="{{ $author }}"/>
   {{ end }}
 
   {{ $styles := resources.Get "css/main.css" }}
