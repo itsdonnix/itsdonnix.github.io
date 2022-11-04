@@ -7,5 +7,20 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
+    <script>
+      window.addEventListener('load', function () {
+        const ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-4NYJGFWYE3';
+        (document.head || document.body).appendChild(ga);
+        ga.addEventListener('load', function () {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'G-4NYJGFWYE3');
+        });
+      });
+    </script>
   </body>
 </html>
