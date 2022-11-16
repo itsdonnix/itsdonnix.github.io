@@ -33,7 +33,7 @@ jobs:
         run: npm i -g pnpm
 
       - name: Install Dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
         if: github.event_name != 'pull_request'
 
       - name: Install Dependencies (for PR only)
