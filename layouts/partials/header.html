@@ -60,10 +60,17 @@
     </div>
   </div>
   {{ partial "dark_mode_script.html" }}
-  <nav class="flex flex-wrap justify-center gap-4 py-2 font-bold">
+  <nav class="flex flex-wrap justify-center gap-4 py-2 font-bold top-nav">
     <a title="Home" href="/">home</a>
     <a title="Posts" href="/posts">posts</a>
     <a title="About" href="/about">about</a>
     <a title="Resume" href="/resume">resume</a>
   </nav>
+  <script>
+    Array.from(document.body.querySelectorAll(".top-nav a") || []).forEach((navLink => {
+      if (navLink.href === location.href || location.href.startsWith(navLink.href) && navLink.getAttribute('href') !== '/') {
+        navLink.classList.add("active");
+      }
+    }));
+  </script>
 </header>

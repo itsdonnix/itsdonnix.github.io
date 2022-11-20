@@ -159,6 +159,10 @@ svg .fill {
   display: none;
 }
 
+.top-nav a.active {
+  text-decoration: underline;
+}
+
 .main-section {
   flex-grow: 1;
 }
