@@ -127,27 +127,20 @@
   border-bottom: 1px dotted currentColor;
 }
 
-/* .markdown-body a::before {
-  bottom: 0;
-  display: inline-block;
-  content: "";
-  height: 10%;
-  position: absolute;
-  transition: height 0.1s linear;
-  width: 100%;
-  z-index: -1;
-} */
-
 .markdown-body a:hover {
   border-bottom-width: 2px;
   color: var(--anchor-hover-font-color);
   text-decoration: initial;
 }
 
-/* .markdown-body a:hover::before {
-  background-color: var(--anchor-bg-color);
-  height: 100%;
-} */
+.markdown-body .hanchor {
+  display: none;
+}
+
+.markdown-body :is(h1, h2, h3, h4, h5, h6):hover .hanchor {
+  display: initial;
+  border-bottom-width: 0;
+}
 
 .markdown-body strong {
   font-weight: 600;

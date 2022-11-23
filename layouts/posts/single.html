@@ -28,7 +28,9 @@
         {{ .TableOfContents }}
       </aside>
 
-      {{ .Content }}
+      {{- with .Content -}}
+        {{ . | replaceRE "(<h[2-4] id=\"([^\"]+)\".+)(</h[2-4]+>)" `${1} <a href="#${2}" class="hanchor" ariaLabel="${2}">#</a>${3}`| safeHTML }}
+      {{- end -}}
     </main>
 
     {{ if isset .Params "tags" }}
