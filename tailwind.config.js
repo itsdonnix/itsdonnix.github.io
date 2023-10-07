@@ -8,12 +8,7 @@ const config = {
     uniformColorPalette: true,
     extendedFontSizeScale: true,
   },
-  content: [
-    "./layouts/**/*.html",
-    "./content/**/*.md",
-    "./content/**/*.html",
-    "./static/**/*.html",
-  ],
+  content: ["./layouts/**/*.html", "./content/**/*.md", "./content/**/*.html", "./static/**/*.html"],
   darkMode: "class",
   theme: {
     screens: {
@@ -41,7 +36,7 @@ const config = {
         "Noto Color Emoji",
       ],
       serif: ["Lora", "Cambria", "Cochin", "Georgia", "Times", "Times New Roman", "serif"],
-      monospace: ["SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "monospace"],
+      monospace: ["Cascadia Code", "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "monospace"],
     },
   },
 };
