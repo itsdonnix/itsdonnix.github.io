@@ -728,7 +728,7 @@
 .markdown-body pre > code {
   padding: 0;
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.85em;
   word-break: normal;
   white-space: pre;
   background: transparent;
@@ -746,7 +746,7 @@
 
 .markdown-body .highlight pre,
 .markdown-body pre {
-  padding: 16px;
+  padding: 0.85em;
   overflow: auto;
   line-height: 1.45;
   background-color: var(--code-bg-color);
