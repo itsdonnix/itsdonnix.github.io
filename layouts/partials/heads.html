@@ -104,13 +104,13 @@
   /></noscript> -->
   <script>
     window.addEventListener("load", () => {
-      const loadLaterScripts = document.querySelectorAll("script[data-src]")
+      const loadLaterScripts = document.querySelectorAll("script[data-src]");
       loadLaterScripts.forEach(script => {
-        script.setAttribute("src", script.getAttribute("data-src"))
-      })
-    })
+        script.setAttribute("src", script.getAttribute("data-src"));
+      });
+    });
   </script>
 
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" id="hljs-theme" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
   <script data-src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js" onload="hljs.highlightAll()"></script>
 </head>

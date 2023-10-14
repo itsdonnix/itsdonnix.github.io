@@ -2,12 +2,19 @@
   (function () {
     const toggleDarkEl = document.getElementById("toggle-dark");
     const htmlEl = document.querySelector("html");
+    const hljsTheme = document.querySelector("#hljs-theme");
+
+    function getHLJSThemeURL(themeName) {
+      return hljsTheme.href.split("/").slice(0, -1).join('/') + "/" + themeName + ".min.css";
+    }
 
     function setDark(dark, save = true) {
       if (dark) {
         htmlEl.classList.add("dark");
+        hljsTheme.href = getHLJSThemeURL("atom-one-dark");
       } else {
         htmlEl.classList.remove("dark");
+        hljsTheme.href = getHLJSThemeURL("atom-one-light");
       }
       if (save) {
         localStorage["dark"] = dark;
