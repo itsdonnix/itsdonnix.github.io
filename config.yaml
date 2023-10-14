@@ -1,0 +1,22 @@
+DefaultContentLanguage: "en"
+languageCode: "en"
+title: "Don Alfons Nisnoni"
+
+params:
+  author: "Don Alfons Nisnoni"
+  twitter_username: "AlfonsDon"
+
+taxonomies:
+  tag: "tags"
+
+build:
+  writeStats: true
+
+markup:
+  highlight:
+    codeefence: false
+    noClasses: false
+
+  goldmark:
+    renderer:
+      unsafe: true
