@@ -2,25 +2,14 @@
 <html lang="en" prefix="og: https://ogp.me/ns#">
   {{ partial "heads.html" . }}
   <body class="flex flex-col min-h-screen">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNRCKP9F"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     {{ partial "header.html" . }}
     <main class="px-4 py-3 mx-auto main-section _container">
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
-    <script>
-      window.addEventListener('load', function () {
-        const ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-4NYJGFWYE3';
-        (document.head || document.body).appendChild(ga);
-        ga.addEventListener('load', function () {
-          window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
-          gtag('js', new Date());
-          gtag('config', 'G-4NYJGFWYE3');
-        });
-      });
-    </script>
   </body>
 </html>
