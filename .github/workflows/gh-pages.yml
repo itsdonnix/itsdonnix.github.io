@@ -41,7 +41,7 @@ jobs:
         if: github.event_name == 'pull_request'
 
       - name: Hugo Build
-        run: hugo --baseURL https://donnisnoni.github.io --minify && pnpm run build-css
+        run: hugo --baseURL https://itsdonnix.github.io --minify && pnpm run build-css
 
       - name: Generate Resume PDF
         run: pnpm run generate-resume-pdf

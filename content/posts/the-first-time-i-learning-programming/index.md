@@ -12,7 +12,7 @@ thumbnail: "programming-coding-computer-scripts.jpg"
 thumbnail_alt: "Programming"
 ---
 
-It's almost six years since the first time I learn programming. But I never think of making [my own site/blog](https://donnisnoni.github.io). Finally, I got to make it happen in 2021 🥳.
+It's almost six years since the first time I learn programming. But I never think of making [my own site/blog](https://itsdonnix.github.io). Finally, I got to make it happen in 2021 🥳.
 
 So, in my first post, I will tell my little story when the first time I learn programming 👨‍💻.
 
