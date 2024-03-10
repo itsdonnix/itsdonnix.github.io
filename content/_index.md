@@ -1,5 +1,5 @@
 ---
 title: "Homepage"
-author: "Don Alfons Nisnoni"
-description: "The homepage of Don Nisnoni's Blog"
+author: "Don Alfons"
+description: "The homepage of Don Alfons' Blog"
 ---

@@ -1,9 +1,9 @@
 DefaultContentLanguage: "en"
 languageCode: "en"
-title: "Don Alfons Nisnoni"
+title: "Don Alfons"
 
 params:
-  author: "Don Alfons Nisnoni"
+  author: "Don Alfons"
   twitter_username: "itsdonnix"
 
 taxonomies:

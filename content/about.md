@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-author: "Don Alfons Nisnoni"
+author: "Don Alfons"
 ---
 
 {{< my_avatar >}}

@@ -1,5 +1,5 @@
 ---
-author: "Don Alfons Nisnoni"
+author: "Don Alfons"
 date: 2021-02-04T23:21:26+08:00
 draft: true
 tags:
@@ -30,7 +30,7 @@ voluptatibus nulla accusamus porro numquam, nemo odio molestias doloremque imped
 ```js
 function something() {}
 
-const don = "Don Alfons Nisnoni";
+const don = "Don Alfons";
 ```
 
 > Lorem ipsum dolor sit amet consectetur adipisicing elit.

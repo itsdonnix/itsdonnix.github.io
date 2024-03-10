@@ -1,5 +1,5 @@
 ---
-author: "Don Alfons Nisnoni"
+author: "Don Alfons"
 date: 2021-02-05T04:12:42+08:00
 description: "My little story when the first time I learning programming"
 title: "The First Time I Learning Programming"

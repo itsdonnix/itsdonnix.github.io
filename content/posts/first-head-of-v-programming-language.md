@@ -1,5 +1,5 @@
 ---
-author: "Don Alfons Nisnoni"
+author: "Don Alfons"
 date: 2021-02-04T23:17:55+08:00
 draft: true
 title: "First Head of V Programming Language"
