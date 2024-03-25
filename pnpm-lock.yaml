@@ -30,8 +30,8 @@ devDependencies:
     specifier: ^10.0.0
     version: 10.0.0(postcss@8.4.18)
   postcss-import:
-    specifier: 15.0.0
-    version: 15.0.0(postcss@8.4.18)
+    specifier: 16.1.0
+    version: 16.1.0(postcss@8.4.18)
   postcss-scss:
     specifier: ^4.0.4
     version: 4.0.5(postcss@8.4.18)
@@ -1219,9 +1219,9 @@ packages:
       resolve: 1.22.1
     dev: true
 
-  /postcss-import@15.0.0(postcss@8.4.18):
-    resolution: {integrity: sha512-Y20shPQ07RitgBGv2zvkEAu9bqvrD77C9axhj/aA1BQj4czape2MdClCExvB27EwYEJdGgKZBpKanb0t1rK2Kg==}
-    engines: {node: '>=14.0.0'}
+  /postcss-import@16.1.0(postcss@8.4.18):
+    resolution: {integrity: sha512-7hsAZ4xGXl4MW+OKEWCnF6T5jqBw80/EE9aXg1r2yyn1RsVEU8EtKXbijEODa+rg7iih4bKf7vlvTGYR4CnPNg==}
+    engines: {node: '>=18.0.0'}
     peerDependencies:
       postcss: ^8.0.0
     dependencies:
