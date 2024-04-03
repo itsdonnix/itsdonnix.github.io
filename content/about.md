@@ -9,7 +9,7 @@ _Don_ is a passionate, motivated, and creative web developer with work experienc
 
 ### Education Background
 
-Graduated **Information Technology Associate Degree** from [STIKOM Uyelindo Kupang](https://uyelindo.ac.id) in 2019 with a GPA of **3.44**.
+Graduated **Information Technology Associate Degree** from [STIKOM Uyelindo Kupang](https://siamiruyelindo.ac.id/) in 2019 with a GPA of **3.44**.
 
 ### Let's Talk
 
