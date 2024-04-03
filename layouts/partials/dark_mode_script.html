@@ -5,7 +5,7 @@
     const hljsTheme = document.querySelector("#hljs-theme");
 
     function getHLJSThemeURL(themeName) {
-      return hljsTheme.href.split("/").slice(0, -1).join('/') + "/" + themeName + ".min.css";
+      return hljsTheme.href.split("/").slice(0, -1).join("/") + "/" + themeName + ".min.css";
     }
 
     function setDark(dark, save = true) {

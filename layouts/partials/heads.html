@@ -26,21 +26,22 @@
   <!-- GET PAGE DESCRIPTION -->
   {{ $description := "" }}
   {{ if or .Params.description .Summary }}
-      {{ if isset .Params "description" }}
-        {{ $description = .Description }}
-      {{ else }}
-        {{ $description = .Summary }}
-      {{ end }}
+    {{ if isset .Params "description" }}
+      {{ $description = .Description }}
+    {{ else }}
+      {{ $description = .Summary }}
+    {{ end }}
   {{ end }}
+
 
   <!-- GET PAGE AUTHOR -->
   {{ $author := "" }}
   {{ if or .Params.author .Site.Author }}
-      {{ if isset .Params "author" }}
-        {{ $author = .Params.Author }}
-      {{ else }}
-        {{ $author = .Site.Author }}
-      {{ end }}
+    {{ if isset .Params "author" }}
+      {{ $author = .Params.Author }}
+    {{ else }}
+      {{ $author = .Site.Author }}
+    {{ end }}
   {{ end }}
 
 
@@ -51,7 +52,7 @@
   {{ end }}
   <meta property="twitter:title" content="{{ .Title }} • {{ .Site.Title }}" />
   {{ if or .Params.description .Summary }}
-    <meta name="twitter:description" content="{{ $description }}"/>
+    <meta name="twitter:description" content="{{ $description }}" />
   {{ end }}
 
 
@@ -65,19 +66,19 @@
     <meta property="og:image" content="{{ $image.Permalink }}" />
   {{ end }}
   {{ if or .Params.description .Summary }}
-    <meta property="og:description" content="{{ $description }}"/>
+    <meta property="og:description" content="{{ $description }}" />
   {{ end }}
 
 
   <!-- META DESCRIPTION -->
   {{ if or .Params.description .Summary }}
-    <meta name="description" content="{{ $description }}"/>
+    <meta name="description" content="{{ $description }}" />
   {{ end }}
 
 
   <!-- META AUTHOR -->
   {{ if or .Params.author .Site.Author }}
-    <meta name="author" content="{{ $author }}"/>
+    <meta name="author" content="{{ $author }}" />
   {{ end }}
 
   {{ $styles := resources.Get "css/main.css" }}
@@ -103,21 +104,42 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
   /></noscript> -->
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KNRCKP9F');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KNRCKP9F");
+  </script>
   <!-- End Google Tag Manager -->
   <script>
     window.addEventListener("load", () => {
       const loadLaterScripts = document.querySelectorAll("script[data-src]");
-      loadLaterScripts.forEach(script => {
+      loadLaterScripts.forEach((script) => {
         script.setAttribute("src", script.getAttribute("data-src"));
       });
     });
   </script>
-  <link rel="preload"  href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code@4.2.1/index.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" id="hljs-theme" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
-  <script data-src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js" onload="hljs.highlightAll()"></script>
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code@4.2.1/index.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <link
+    rel="preload"
+    id="hljs-theme"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <script
+    data-src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"
+    onload="hljs.highlightAll()"
+  ></script>
 </head>

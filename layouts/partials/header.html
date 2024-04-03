@@ -67,10 +67,13 @@
     <a title="Resume" href="/resume">resume</a>
   </nav>
   <script>
-    Array.from(document.body.querySelectorAll(".top-nav a") || []).forEach((navLink => {
-      if (navLink.href === location.href || location.href.startsWith(navLink.href) && navLink.getAttribute('href') !== '/') {
+    Array.from(document.body.querySelectorAll(".top-nav a") || []).forEach((navLink) => {
+      if (
+        navLink.href === location.href ||
+        (location.href.startsWith(navLink.href) && navLink.getAttribute("href") !== "/")
+      ) {
         navLink.classList.add("active");
       }
-    }));
+    });
   </script>
 </header>
