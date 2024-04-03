@@ -9,7 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Resume of Don Alfons</title>
     <meta name="author" content="Don Alfons" />
     <meta name="description" content="Don Alfons' Resume" />
@@ -29,7 +35,9 @@
         text-decoration: underline;
       }
 
-      h2, h3, h4 {
+      h2,
+      h3,
+      h4 {
         border-left: 0.3rem solid #2e3066;
         color: #26263c;
         padding-left: 0.6rem;
@@ -122,18 +130,31 @@
       }
     </style>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KNRCKP9F');</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KNRCKP9F");
+    </script>
     <!-- End Google Tag Manager -->
   </head>
-  <body class="flex flex-col w-screen min-h-screen overflow-x-hidden">
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNRCKP9F"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
+  <body class="flex overflow-x-hidden flex-col w-screen min-h-screen">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KNRCKP9F"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="p-5 header">
       <h1 class="font-bold" title="Don Alfons' Resume">Resume of Don Alfons</h1>
     </header>
@@ -142,18 +163,23 @@
       <hr />
     </div>
 
-    <main class="flex flex-col w-full p-5 mb-10">
+    <main class="flex flex-col p-5 mb-10 w-full">
       <div class="flex flex-col w-full xl:flex-row">
-        <div class="flex flex-col mb-10 mr-3">
+        <div class="flex flex-col mr-3 mb-10">
           <!-- SUMMARY -->
           <h2 class="mb-1 heading-2">SUMMARY</h2>
           <div class="max-w-lg article">
-            <p><em>Don</em> is a passionate, motivated, and creative web developer with work experience since 2020. He learning web development since 2015 and mostly focused on front-end web development but has the flexibility and experience to work on back-end web development as well. He experience with web technologies and tools such as NodeJS, MySQL, PHP, Laravel, ReactJS, and VueJS.</p> 
+            <p>
+              <em>Don</em> is a passionate, motivated, and creative web developer with work experience since 2020. He
+              learning web development since 2015 and mostly focused on front-end web development but has the
+              flexibility and experience to work on back-end web development as well. He experience with web
+              technologies and tools such as NodeJS, MySQL, PHP, Laravel, ReactJS, and VueJS.
+            </p>
           </div>
-        <div class="flex flex-col mt-5 mb-10">
-          <h2 class="mb-1 heading-2">PERSONAL DATA</h2>
-          <div class="flex flex-col md:flex-row">
-          <!-- <div class="my-1 md:my-5">
+          <div class="flex flex-col mt-5 mb-10">
+            <h2 class="mb-1 heading-2">PERSONAL DATA</h2>
+            <div class="flex flex-col md:flex-row">
+              <!-- <div class="my-1 md:my-5">
               <img
               class="mx-auto my-auto rounded-full shadow-md md:my-2"
               src="https://avatars.githubusercontent.com/u/16399020?s=200&u=8eb8a5d850a476e09cc6a6085b32a9f44432779b&v=4"
@@ -163,110 +189,101 @@
               title="My profile picture"
             />
           </div> -->
-            <div class="mt-4">
-              <!-- DOB -->
-              <div>
-                <span class="font-bold">Age:</span>
-                <span id="age">0</span>
-                <script>
-                  const bornDate = new Date(1995, 8, 18);
-                  const nowDate = new Date();
-                  const bornYear = bornDate.getFullYear();
-                  const nowYear = nowDate.getFullYear();
-                  let age = nowYear - bornYear - 1;
-                  if (
-                    nowDate.getMonth() >= bornDate.getMonth() &&
-                    nowDate.getDate() >= bornDate.getDate()
-                  ) {
-                    age += 1;
-                  }
-                  document.getElementById("age").textContent = age + " years old";
-                </script>
-              </div>
+              <div class="mt-4">
+                <!-- DOB -->
+                <div>
+                  <span class="font-bold">Age:</span>
+                  <span id="age">0</span>
+                  <script>
+                    const bornDate = new Date(1995, 8, 18);
+                    const nowDate = new Date();
+                    const bornYear = bornDate.getFullYear();
+                    const nowYear = nowDate.getFullYear();
+                    let age = nowYear - bornYear - 1;
+                    if (nowDate.getMonth() >= bornDate.getMonth() && nowDate.getDate() >= bornDate.getDate()) {
+                      age += 1;
+                    }
+                    document.getElementById("age").textContent = age + " years old";
+                  </script>
+                </div>
 
-              <!-- ADDRESS -->
-              <div>
-                <span class="font-bold">Occupation:</span>
-                <span>Kuta, Bali - Indonesia
-                </span>
-              </div>
+                <!-- ADDRESS -->
+                <div>
+                  <span class="font-bold">Occupation:</span>
+                  <span>Kuta, Bali - Indonesia </span>
+                </div>
 
-              <!-- PHONE -->
-              <div>
-                <span class="font-bold">Phone:</span>
-                <a class="link" href=tel:+6283809705594" title="My phone number">
-                  +6283809705594
-                </a> or via <a href="https://wa.me/6283809705594">WhatsApp</a>
-              </div>
+                <!-- PHONE -->
+                <div>
+                  <span class="font-bold">Phone:</span>
+                  <a class="link" href="tel:+6283809705594" title="My phone number"> +6283809705594 </a> or via
+                  <a href="https://wa.me/6283809705594">WhatsApp</a>
+                </div>
 
-              <!-- PROFESSION -->
-              <!-- <div>
+                <!-- PROFESSION -->
+                <!-- <div>
                 <span class="font-bold">Preffered Position:</span>
                 <span>
                   Front-end Web Developer
                 </span>
               </div> -->
 
-              <!-- EMAIL -->
-              <div>
-                <span class="font-bold">Email:</span>
-                <a class="link" href="mailto:donalfonsnnisnoni@gmail.com" title="My Email">
-                  donalfonsnnisnoni@gmail.com
-                </a>
-              </div>
+                <!-- EMAIL -->
+                <div>
+                  <span class="font-bold">Email:</span>
+                  <a class="link" href="mailto:donalfonsnnisnoni@gmail.com" title="My Email">
+                    donalfonsnnisnoni@gmail.com
+                  </a>
+                </div>
 
-              <!-- WEBSITE -->
-              <div>
-                <span class="font-bold">Personal Website:</span>
-                <a
-                  class="link"
-                  href="https://itsdonnix.github.io"
-                  target="_blank"
-                  title="My Website"
-                >
-                  itsdonnix.github.io
-                </a>
-              </div>
+                <!-- WEBSITE -->
+                <div>
+                  <span class="font-bold">Personal Website:</span>
+                  <a class="link" href="https://itsdonnix.github.io" target="_blank" title="My Website">
+                    itsdonnix.github.io
+                  </a>
+                </div>
 
-              <!-- GITHUB -->
-              <div>
-                <span class="font-bold">GitHub:</span>
-                <a
-                  class="link"
-                  href="https://github.com/itsdonnix"
-                  target="_blank"
-                  title="My GitHub profile"
-                  rel="noreferer noopener nofollow"
-                >
-                  itsdonnix
-                </a>
-              </div>
+                <!-- GITHUB -->
+                <div>
+                  <span class="font-bold">GitHub:</span>
+                  <a
+                    class="link"
+                    href="https://github.com/itsdonnix"
+                    target="_blank"
+                    title="My GitHub profile"
+                    rel="noreferer noopener nofollow"
+                  >
+                    itsdonnix
+                  </a>
+                </div>
 
-              <!-- LINKEDIN -->
-              <div>
-                <span class="font-bold">LinkedIn:</span>
-                <a
-                  class="link"
-                  href="https://www.linkedin.com/in/itsdonnix"
-                  title="My LinkedIn profile"
-                  target="_blank"
-                  rel="noreferer noopener nofollow"
-                >
-                  itsdonnix
-                </a>
+                <!-- LINKEDIN -->
+                <div>
+                  <span class="font-bold">LinkedIn:</span>
+                  <a
+                    class="link"
+                    href="https://www.linkedin.com/in/itsdonnix"
+                    title="My LinkedIn profile"
+                    target="_blank"
+                    rel="noreferer noopener nofollow"
+                  >
+                    itsdonnix
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="flex flex-col w-full gap-3 xl:flex-row">
+      <div class="flex flex-col gap-3 w-full xl:flex-row">
         <!-- EDUCATION -->
         <div class="flex flex-col mb-10 section md:w-1/2 xl:w-1/3">
           <h2 class="mb-1 heading-2">EDUCATION</h2>
           <h3 class="heading-3">
             Associate Degree of Information Technology at
-            <a href="http://uyelindo.ac.id" target="_blank" rel="noreferer noopener nofollow">STIKOM UYELINDO Kupang</a>
+            <a href="https://siamiruyelindo.ac.id/" target="_blank" rel="noreferer noopener nofollow">STIKOM UYELINDO Kupang</a>
           </h3>
           <p>Jul 2015 - Dec 2019 - <b>GPA: 3.44</b></p>
         </div>
@@ -285,10 +302,7 @@
           <p>HTML, CSS, Javascript, NodeJS, Typescript, C#, V, SASS, SQL, PHP, Python</p>
 
           <h3 class="heading-3">Frameworks/Libraries:</h3>
-          <p>
-            jQuery, Vue, React, Svelte, Sapper, CodeIgniter, Laravel, Express, Fastify, Sequelize,
-            TailwindCSS
-          </p>
+          <p>jQuery, Vue, React, Svelte, Sapper, CodeIgniter, Laravel, Express, Fastify, Sequelize, TailwindCSS</p>
 
           <h3 class="heading-3">Technique:</h3>
           <p>Responsive Web Design, a11y, i18n, PWA</p>
@@ -303,27 +317,19 @@
             <p>
               May 2021 - Present at
               <b>
-                <a href="https://alphien.com" target="_blank" rel="noreferer noopener nofollow">
-                  Alphien SAS
-                </a>
-                </b>
+                <a href="https://alphien.com" target="_blank" rel="noreferer noopener nofollow"> Alphien SAS </a>
+              </b>
             </p>
             <ul>
-              <li>
-                Building and maintain NuxtJS and VueJS websites.
-              </li>
-              <li>
-                Building and maintain Laravel websites.
-              </li>
-              <li>
-                Extending a discourse forum (Develop discourse widgets and extensions).
-              </li>
+              <li>Building and maintain NuxtJS and VueJS websites.</li>
+              <li>Building and maintain Laravel websites.</li>
+              <li>Extending a discourse forum (Develop discourse widgets and extensions).</li>
               <li>Develop JupyterLab extensions.</li>
+              <li>Integrate PayPal payment with Laravel website.</li>
               <li>
-                Integrate PayPal payment with Laravel website.
-              </li>
-              <li>
-                Install and extending <a href="https://qloapps.com/" rel="nofollow noreferer" target="_blank">Qlo Hotel Reservation System</a>.
+                Install and extending
+                <a href="https://qloapps.com/" rel="nofollow noreferer" target="_blank">Qlo Hotel Reservation System</a
+                >.
               </li>
             </ul>
           </div>
@@ -332,22 +338,12 @@
             <h3 class="heading-3 section">Part-time Front-End Web Developer</h3>
             <p>
               Feb 2021 - May 2021 at
-              <b
-                ><a
-                  href="https://github.com/vlingo"
-                  target="_blank"
-                  rel="noreferer noopener nofollow"
-                  >Vlingo</a
-                ></b
-              >
+              <b><a href="https://github.com/vlingo" target="_blank" rel="noreferer noopener nofollow">Vlingo</a></b>
             </p>
             <ul>
               <li>
                 Implementing
-                <a
-                  href="https://github.com/vlingo/vlingo-auth"
-                  target="_blank"
-                  rel="noreferer noopener nofollow"
+                <a href="https://github.com/vlingo/vlingo-auth" target="_blank" rel="noreferer noopener nofollow"
                   >vlingo/auth
                 </a>
                 UI using SvelteKit framework.
@@ -359,7 +355,7 @@
             <h3 class="heading-3">Web Developer & IT Support</h3>
             <p>
               Feb 2020 - Aug 2020 at
-              <a href="http://uyelindo.ac.id" target="_blank" rel="noreferer noopener nofollow"
+              <a href="https://siamiruyelindo.ac.id/" target="_blank" rel="noreferer noopener nofollow"
                 ><b>STIKOM UYELINDO Kupang</b></a
               >
             </p>
@@ -379,7 +375,7 @@
       Don Alfons
     </footer>
 
-    <div class="fixed flex flex-col gap-1 md:flex-row bottom-5 right-5 print:hidden">
+    <div class="flex fixed right-5 bottom-5 flex-col gap-1 md:flex-row print:hidden">
       <button
         onclick="print()"
         class="px-4 py-2 text-white bg-blue-800 rounded-md shadow-md cursor-pointer"
