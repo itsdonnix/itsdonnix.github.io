@@ -26,6 +26,8 @@
     "generate-resume-pdf": "node ./scripts/generatePDF.js ./static/resume/index.html ./public/resume/resume.pdf \"Don Alfons's Resume\"",
     "build": "hugo --minify && pnpm run build-css && pnpm run generate-resume-pdf",
     "build-css": "NODE_ENV=production postcss ./assets/css/main.css -o ./public/css/main.min.css",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write .",
     "dev": "nodemon -e 'html, css, js, md toml' -i public -x 'clear; hugo; postcss ./assets/css/main.css -o ./public/css/main.min.css'"
   }
 }
