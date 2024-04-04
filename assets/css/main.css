@@ -6,6 +6,7 @@
 :root {
   --base-bg-color: hsl(0, 0%, 100%);
   --base-font-color: hsl(240, 10%, 21%);
+  --base-border-color: hsl(240, 7%, 11%);
   --main-header-border-color: hsl(120, 20%, 84%);
   --post-info-font-color: hsl(190, 3%, 44%);
   /* --anchor-font-color: hsl(221, 63%, 47%); */
@@ -22,6 +23,7 @@
 :root.dark {
   --base-bg-color: hsl(240, 25%, 14%);
   --base-font-color: hsl(0, 0%, 100%);
+  --base-border-color: hsl(240, 25%, 22%);
   --post-info-font-color: hsl(193, 6%, 68%);
   /* --anchor-font-color: hsl(261, 84%, 74%); */
   /* --anchor-bg-color: hsl(240, 25%, 25%); */
@@ -291,6 +293,7 @@ svg .fill {
 
 .post .thumbnail {
   aspect-ratio: 16/9;
+  border: 0.15em solid var(--base-border-color);
 }
 
 .hr-border {
