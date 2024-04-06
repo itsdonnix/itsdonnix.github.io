@@ -238,51 +238,51 @@ svg .fill {
 
 /* ------------------------------- POST STYLES ------------------------------ */
 
-.post .title,
-.post-list .title {
+.note .title,
+.note-list .title {
   /* font-family: var(--font-serif); */
   /* @apply font-serif; */
   font-weight: bold;
 }
 
-.post .info {
+.note .info {
   margin-bottom: 20px;
 }
 
-.post .info,
-.post-list .info {
+.note .info,
+.note-list .info {
   color: var(--post-info-font-color);
 }
 
-.post-list {
+.note-list {
   margin-bottom: 10px;
 }
 
-.post-list .title {
+.note-list .title {
   font-size: 20px;
 }
 
-.post .title {
+.note .title {
   font-size: 1.8em;
 }
 
-.post-list .title a {
+.note-list .title a {
   color: var(--base-font-color);
 }
 
-.post footer {
+.note footer {
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.post .tags {
+.note .tags {
   display: flex;
   list-style: none;
   margin-bottom: 10px;
   margin-top: 30px;
 }
 
-.post .tags a {
+.note .tags a {
   background-color: var(--code-bg-color);
   border-radius: 5px;
   margin-bottom: 8px;
@@ -291,7 +291,7 @@ svg .fill {
   text-decoration: none;
 }
 
-.post .thumbnail {
+.note .thumbnail {
   aspect-ratio: 16/9;
   border: 0.15em solid var(--base-border-color);
 }

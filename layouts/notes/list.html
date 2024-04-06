@@ -1,7 +1,7 @@
 {{ define "main" }}
   <h2 class="page-main-title">{{ .Title }}</h2>
 
-  {{ range (where .Pages "Type" "posts") }}
-    {{ partial "post-list.html" . }}
+  {{ range (where .Pages "Type" "notes") }}
+    {{ partial "note-list.html" . }}
   {{ end }}
 {{ end }}
