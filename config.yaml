@@ -5,6 +5,7 @@ title: "Don Alfons"
 params:
   author: "Don Alfons"
   twitter_username: "itsdonnix"
+  github_username: "itsdonnix"
 
 taxonomies:
   tag: "tags"
