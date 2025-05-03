@@ -1,14 +1,19 @@
 {{ define "main" }}
-  <article class="flex flex-col mt-4 mb-10">
-    <img
+  <article class="flex flex-col mt-4">
+    <!-- <img
       class="self-center rounded-full my-avatar"
-      width="200"
-      height="200"
+      width="100"
+      height="100"
       loading="lazy"
       src="https://avatars.githubusercontent.com/u/16399020?s=200&u=8eb8a5d850a476e09cc6a6085b32a9f44432779b&v=4"
       alt="Don Alfons"
-    />
-    <div class="flex items-center justify-center gap-3 my-7 socmed-links-wrapper">
+    /> -->
+    
+    <section class="flex-grow markdown-body">
+      {{ .Content }}
+    </section>
+
+    <div class="flex gap-3 justify-center items-center mt-10 socmed-links-wrapper">
       <a
         href="https://github.com/itsdonnix"
         aria-label="GitHub"
@@ -49,23 +54,13 @@
         {{ readFile "static/icons/linkedin.svg" | safeHTML }}
       </a>
     </div>
-    <div class="markdown-body">
-      <p>
-        <em>Don</em> is a passionate, motivated, and creative web developer with work experience since 2020. He learning
-        web development since 2015 and mostly focused on front-end web development but has the flexibility and
-        experience to work on back-end web development as well. He experience with web technologies and tools such as
-        NodeJS, MySQL, PHP, Laravel, ReactJS, and VueJS.
-      </p>
-
-      <p>👉 <a href="/about" class="">more about Don</a></p>
-    </div>
   </article>
 
   <!-- <h2 class="page-main-title">Recent Posts</h2> -->
 
   <!-- {{ with .Site.GetPage "section" "/posts" }}
     {{ range first 5 .Pages }}
-      {{ partial "post-list.html" . }}
+      {{ partial "note-list.html" . }}
     {{ end }}
     <div class="flex">
       <a class="ml-auto" href="./posts" rel="prefetch" title="All Posts">All Posts »</a>
