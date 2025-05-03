@@ -7,6 +7,9 @@ params:
   twitter_username: "itsdonnix"
   github_username: "itsdonnix"
 
+permalinks:
+    notes: "/notes/:slug"
+
 taxonomies:
   tag: "tags"
 
