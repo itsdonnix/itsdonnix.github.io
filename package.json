@@ -7,7 +7,7 @@
   "author": "Don Alfons",
   "license": "MIT",
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "5.0.0",
+    "@fullhuman/postcss-purgecss": "6.0.0",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
     "cssnano-preset-advanced": "^5.3.9",
