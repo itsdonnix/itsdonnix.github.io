@@ -91,7 +91,7 @@
 
 .toggle-dark {
   cursor: pointer;
-  padding: 5px;
+  padding: 0.4em;
   user-select: none;
   clip-path: circle();
   transition: all 0.2s;
