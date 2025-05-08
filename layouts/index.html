@@ -8,33 +8,42 @@
       src="https://avatars.githubusercontent.com/u/16399020?s=200&u=8eb8a5d850a476e09cc6a6085b32a9f44432779b&v=4"
       alt="Don Alfons"
     /> -->
-    
+
     <section class="flex-grow markdown-body">
       {{ .Content }}
     </section>
 
     <div class="flex gap-3 justify-center items-center mt-10 socmed-links-wrapper">
-      <a
-        href="https://github.com/itsdonnix"
-        aria-label="GitHub"
-        title="GitHub"
-        target="_blank"
-        rel="noreferrer nofollow"
-      >
-        {{ readFile "static/icons/github.svg" | safeHTML }}
-      </a>
+      {{ if .Site.Params.github_username }}
+        <a
+          href="https://github.com/{{ .Site.Params.github_username }}"
+          aria-label="GitHub"
+          title="GitHub"
+          target="_blank"
+          rel="noreferrer nofollow"
+        >
+          {{ readFile "static/icons/github.svg" | safeHTML }}
+        </a>
+      {{ end }}
+
+
       <a href="mailto:donalfonsnnisnoni@gmail.com" aria-label="Email" title="Email">
         {{ readFile "static/icons/email.svg" | safeHTML }}
       </a>
-      <a
-        href="https://twitter.com/itsdonnix"
-        aria-label="Twitter"
-        title="Twitter"
-        target="_blank"
-        rel="noreferrer nofollow"
-      >
-        {{ readFile "static/icons/twitter.svg" | safeHTML }}
-      </a>
+
+      {{ if .Site.Params.twitter_username }}
+        <a
+          href="https://twitter.com/{{ .Site.Params.twitter_username }}"
+          aria-label="Twitter"
+          title="Twitter"
+          target="_blank"
+          rel="noreferrer nofollow"
+        >
+          {{ readFile "static/icons/twitter.svg" | safeHTML }}
+        </a>
+      {{ end }}
+
+
       <a
         href="https://codepen.io/donalfonsnisnoni"
         aria-label="CodePen"
