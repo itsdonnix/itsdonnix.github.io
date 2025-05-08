@@ -37,14 +37,12 @@
   transition-property: background-color;
   transition-duration: 0.35s;
   transition-timing-function: ease;
-  will-change: background-color;
 }
 
 @layer base {
   body {
     background-color: var(--base-bg-color);
     color: var(--base-font-color);
-    will-change: background-color, color;
   }
 
   h1,
@@ -181,7 +179,6 @@ svg .fill {
 .socmed-links-wrapper a > svg {
   opacity: 0.8;
   transition: opacity 0.15s ease-in-out;
-  will-change: opacity;
 }
 
 .socmed-links-wrapper a:hover > svg {
