@@ -7,7 +7,9 @@
     if (!toggleDarkEl || !htmlEl || !hljsTheme) return;
 
     function getHLJSThemeURL(themeName) {
-      return hljsTheme.href.split("/").slice(0, -1).join("/") + "/" + themeName + ".min.css";
+      const baseUrl = new URL(hljsTheme.href);
+      baseUrl.pathname = baseUrl.pathname.replace(/[^/]+\.css$/, `${themeName}.min.css`);
+      return baseUrl.href;
     }
 
     function setDark(dark, save = true) {
