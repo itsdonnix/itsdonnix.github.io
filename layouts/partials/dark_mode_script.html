@@ -4,6 +4,8 @@
     const htmlEl = document.querySelector("html");
     const hljsTheme = document.querySelector("#hljs-theme");
 
+    if (!toggleDarkEl || !htmlEl || !hljsTheme) return;
+
     function getHLJSThemeURL(themeName) {
       return hljsTheme.href.split("/").slice(0, -1).join("/") + "/" + themeName + ".min.css";
     }
