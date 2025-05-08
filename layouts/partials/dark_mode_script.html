@@ -19,18 +19,18 @@
       toggleDarkEl.setAttribute("aria-checked", dark);
     }
 
-    if (localStorage["dark"] === "true") {
+    const localPref = localStorage.getItem("dark");
+    if (localPref === "true") {
       setDark(true);
-    } else if (localStorage["dark"] === "false") {
+    } else if (localPref === "false") {
       setDark(false);
-    } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setDark(true, false);
     }
 
-    toggleDarkEl &&
-      toggleDarkEl.addEventListener("click", function () {
-        const isDark = htmlEl.classList.contains("dark");
-        setDark(!isDark);
-      });
+    toggleDarkEl.addEventListener("click", () => {
+      const isDark = htmlEl.classList.contains("dark");
+      setDark(!isDark);
+    });
   })();
 </script>
