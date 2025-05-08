@@ -13,16 +13,9 @@
     }
 
     function setDark(dark, save = true) {
-      if (dark) {
-        htmlEl.classList.add("dark");
-        hljsTheme.href = getHLJSThemeURL("atom-one-dark");
-      } else {
-        htmlEl.classList.remove("dark");
-        hljsTheme.href = getHLJSThemeURL("atom-one-light");
-      }
-      if (save) {
-        localStorage["dark"] = dark;
-      }
+      htmlEl.classList.toggle("dark", dark);
+      hljsTheme.href = getHLJSThemeURL(dark ? "atom-one-dark" : "atom-one-light");
+      if (save) localStorage.setItem("dark", dark);
       toggleDarkEl.setAttribute("aria-checked", dark);
     }
 
