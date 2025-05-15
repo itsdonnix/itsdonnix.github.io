@@ -6,6 +6,7 @@ params:
   author: "Don Alfons"
   twitter_username: "itsdonnix"
   github_username: "itsdonnix"
+  GTM_ID: "GTM-KNRCKP9Fx"
 
 permalinks:
     notes: "/notes/:slug"
