@@ -2,16 +2,16 @@
 <html lang="en" prefix="og: https://ogp.me/ns#">
   {{ partial "heads.html" . }}
   <body class="flex flex-col min-h-screen">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-KNRCKP9F"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    {{ if .Site.Params.GTM_ID }}
+      <noscript
+        ><iframe
+          src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.GTM_ID }}"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        ></iframe
+      ></noscript>
+    {{ end }}
     {{ partial "header.html" . }}
     <main class="px-4 py-3 mx-auto main-section _container">
       {{ block "main" . }}{{ end }}
