@@ -2,7 +2,6 @@
   "name": "itsdonnix.github.io",
   "version": "2.0.0",
   "description": "Don Alfons Personal Site",
-  "main": "index.js",
   "private": "true",
   "author": "Don Alfons",
   "license": "MIT",
