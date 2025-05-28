@@ -30,6 +30,6 @@
     "build-css": "postcss assets/css/main.css -o public/css/main.min.css",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "dev": "nodemon -e 'html, css, js, md, yaml' -i public -x 'clear; hugo; postcss assets/css/main.css -o public/css/main.min.css'"
+    "dev": "nodemon -e 'html, css, js, md, yaml' -i public -x 'clear; hugo; npm run build-css'"
   }
 }
