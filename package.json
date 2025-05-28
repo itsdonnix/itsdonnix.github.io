@@ -24,10 +24,10 @@
   },
   "scripts": {
     "generate-resume-pdf": "node scripts/generatePDF.js static/resume/index.html public/resume/resume.pdf \"Don Alfons's Resume\"",
-    "build": "npm run build:site && npm run build-css && npm run generate-resume-pdf",
+    "build": "npm run build:site && NODE_ENV=production npm run build-css && npm run generate-resume-pdf",
     "build:test": "hugo --minify && npm run build-css && npm run generate-resume-pdf",
     "build:site": "hugo --baseURL https://itsdonnix.github.io --minify",
-    "build-css": "NODE_ENV=production postcss assets/css/main.css -o public/css/main.min.css",
+    "build-css": "postcss assets/css/main.css -o public/css/main.min.css",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
     "dev": "nodemon -e 'html, css, js, md, yaml' -i public -x 'clear; hugo; postcss assets/css/main.css -o public/css/main.min.css'"
