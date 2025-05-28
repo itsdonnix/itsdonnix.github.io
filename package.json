@@ -24,7 +24,7 @@
   "scripts": {
     "generate-resume-pdf": "node scripts/generatePDF.js static/resume/index.html public/resume/resume.pdf \"Don Alfons's Resume\"",
     "build": "npm run build:site && NODE_ENV=production npm run build:css && npm run generate-resume-pdf",
-    "build:test": "hugo --minify && npm run build:css && npm run generate-resume-pdf",
+    "build:dev": "hugo --minify && npm run build:css && npm run generate-resume-pdf",
     "build:site": "hugo --baseURL https://itsdonnix.github.io --minify",
     "build:css": "postcss assets/css/main.css -o public/css/main.min.css",
     "lint": "prettier --check .",
