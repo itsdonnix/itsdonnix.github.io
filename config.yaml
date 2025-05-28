@@ -9,7 +9,7 @@ params:
   GTM_ID: "GTM-KNRCKP9Fx"
 
 permalinks:
-    notes: "/notes/:slug"
+  notes: "/notes/:slug"
 
 taxonomies:
   tag: "tags"
