@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').TailwindConfig} */
+/** @type {import('tailwindcss').Config} */
 const config = {
   future: {
     removeDeprecatedGapUtilities: true,
