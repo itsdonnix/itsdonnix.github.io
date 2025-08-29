@@ -1,13 +1,15 @@
 #!/usr/bin/env node
-const puppeteer = require("puppeteer");
-const fs = require("fs");
-const { Buffer } = require("buffer");
-const { PDFDocument } = require("pdf-lib");
-const path = require("path");
+// @ts-check
+import { launch } from "puppeteer-core";
+import { writeFileSync } from "fs";
+import { Buffer } from "buffer";
+import { PDFDocument } from "pdf-lib";
+import { join, relative } from "path";
 const cwd = process.cwd();
 
 async function createPDF({ pathToHtmlFile, title, format }) {
-  const browser = await puppeteer.launch({
+  const browser = await launch({
+    executablePath: "/opt/google/chrome/chrome",
     headless: true,
     args: [
       "--no-sandbox",
@@ -18,17 +20,17 @@ async function createPDF({ pathToHtmlFile, title, format }) {
     ],
   });
   const page = await browser.newPage();
-  await page.goto("file://" + path.join(cwd, pathToHtmlFile), {
+  await page.goto("file://" + join(cwd, pathToHtmlFile), {
     waitUntil: "networkidle0",
   });
   let pdf = await page.pdf({
     format: format || null,
-    landscape: true,
+    landscape: false,
     margin: {
-      top: "20px",
-      bottom: "20px",
-      left: "20px",
-      right: "20px",
+      top: "200px",
+      bottom: "200px",
+      left: "200px",
+      right: "200px",
     },
   });
 
@@ -48,16 +50,16 @@ async function main() {
   const outputPath = argv[1];
   const title = argv.slice(2).join(" ");
 
-  const relativePathToHtmlFile = path.relative(cwd, pathToHtmlFile);
-  const relativeOutputPath = path.relative(cwd, outputPath);
+  const relativePathToHtmlFile = relative(cwd, pathToHtmlFile);
+  const relativeOutputPath = relative(cwd, outputPath);
 
   const pdf = await createPDF({
     pathToHtmlFile: relativePathToHtmlFile,
-    format: "A3",
+    format: "A4",
     title,
   });
 
-  fs.writeFileSync(relativeOutputPath, pdf);
+  writeFileSync(relativeOutputPath, pdf);
 }
 
 main();

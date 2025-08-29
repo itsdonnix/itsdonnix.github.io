@@ -5,6 +5,7 @@
   "private": true,
   "author": "Don Alfons",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "5.0.0",
     "autoprefixer": "^10.4.13",
@@ -18,7 +19,7 @@
     "postcss-scss": "^4.0.4",
     "prettier": "^2.7.1",
     "prettier-plugin-go-template": "^0.0.13",
-    "puppeteer": "19.2.2",
+    "puppeteer-core": "19.2.2",
     "tailwindcss": "^3.4.3"
   },
   "scripts": {
