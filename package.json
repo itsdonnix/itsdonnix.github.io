@@ -28,7 +28,7 @@
     "build:css": "postcss assets/css/main.css -o public/css/main.min.css",
     "generate-resume-pdf": "node scripts/generatePDF.js static/resume/index.html public/resume/resume.pdf \"Don Alfons's Resume\"",
     "dev": "nodemon -e 'html, css, js, md, yaml' -i public -x 'clear; hugo; npm run build:css'",
-    "lint": "prettier --check .",
-    "lint:fix": "prettier --write ."
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
   }
 }
