@@ -1,6 +1,12 @@
+import purge from "@fullhuman/postcss-purgecss";
+import postcssImport from "postcss-import";
+import autoprefixer from "autoprefixer";
+import cssnano from "cssnano";
+import tailwindcss from "tailwindcss";
+
 const PRODUCTION = process.env.HUGO_ENVIRONMENT === "production" || process.env.NODE_ENV === "production";
 
-const purgecss = require("@fullhuman/postcss-purgecss")({
+const purgecss = purge({
   content: ["./hugo_stats.json"],
   defaultExtractor: (content) => {
     const els = JSON.parse(content).htmlElements;
@@ -8,15 +14,15 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
   },
 });
 
-module.exports = {
+export default {
   syntax: "postcss-scss",
   plugins: [
-    require("postcss-import"),
-    require("tailwindcss"),
-    PRODUCTION && require("autoprefixer"),
+    postcssImport,
+    tailwindcss,
+    PRODUCTION && autoprefixer,
     ...(PRODUCTION ? [purgecss] : []),
     PRODUCTION &&
-      require("cssnano")({
+      cssnano({
         preset: ["advanced", { discardComments: { removeAll: true } }],
       }),
   ],
