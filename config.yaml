@@ -8,6 +8,7 @@ params:
   github_username: "itsdonnix"
   GTM_ID: "GTM-KNRCKP9Fx"
   avatar_size: 150 # Default size in pixels
+  profile_alt_text: "Profile Picture of Don Alfons" # Configurable alt text
 
 permalinks:
   notes: "/notes/:slug"
