@@ -9,6 +9,8 @@ params:
   GTM_ID: "GTM-KNRCKP9Fx"
   avatar_size: 150 # Default size in pixels
   profile_alt_text: "Profile Picture of Don Alfons" # Configurable alt text
+  # Using a generic avatar service as default. You can change this to any local path (e.g., "/images/avatar.jpg") or external URL.
+  avatar_url: "https://avatars.githubusercontent.com/u/16399020?s=200&u=8eb8a5d850a476e09cc6a6085b32a9f44432779b&v=4"
 
 permalinks:
   notes: "/notes/:slug"

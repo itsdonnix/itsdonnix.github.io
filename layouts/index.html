@@ -2,6 +2,7 @@
   <article class="flex flex-col mt-4">
     {{ $avatarSize := .Site.Params.avatar_size | default 100 }}
     {{ $altText := .Site.Params.profile_alt_text | default "Profile Picture" }}
+    {{ $avatarUrl := .Site.Params.avatar_url | default "https://ui-avatars.com/api/?name=User&size=200&background=random" }}
 
 
     <img
@@ -9,7 +10,7 @@
       width="{{ $avatarSize }}"
       height="{{ $avatarSize }}"
       loading="lazy"
-      src="https://avatars.githubusercontent.com/u/16399020?s=200&u=8eb8a5d850a476e09cc6a6085b32a9f44432779b&v=4"
+      src="{{ $avatarUrl }}"
       alt="{{ $altText }}"
     />
 
