@@ -1,13 +1,14 @@
 {{ define "main" }}
   <article class="flex flex-col mt-4">
-    <!-- <img
+    {{ $avatarSize := .Site.Params.avatar_size | default 100 }}
+    <img
       class="self-center rounded-full my-avatar"
-      width="100"
-      height="100"
+      width="{{ $avatarSize }}"
+      height="{{ $avatarSize }}"
       loading="lazy"
-      src="https://avatars.githubusercontent.com/u/16399020?s=200&u=8eb8a5d850a476e09cc6a6085b32a9f44432779b&v=4"
+      src="https://avatars.githubusercontent.com/u/16399020?s=200&u=8eb8a5d850a476e09cc6a6085b32a9f44432779b&v=4 "
       alt="Don Alfons"
-    /> -->
+    />
 
     <section class="flex-grow markdown-body">
       {{ .Content }}
